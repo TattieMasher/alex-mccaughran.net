@@ -24,19 +24,11 @@ body {
 
 .navbar-links {
     gap: 20px; /* Add spacing between links */
-    list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    list-style: none;
     margin: 0;
-    padding: 5px 0; /* Add padding to the links container */
-    position: absolute;
-    top: 90px; /* Position the menu below the navbar */
-    left: 0;
-    width: 100%;
-    background-color: #757a79;
-    z-index: 1000;
+    padding: 20px;
 }
 
 .navbar-link {
@@ -52,12 +44,12 @@ body {
 
 #menu-toggle {
     background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
     font-size: 40px;
 }
 
@@ -70,22 +62,31 @@ body {
     .navbar-links {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out, background-color 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Add visibility transition */
-        position: absolute;
+        visibility: hidden;
+        transition: max-height 0.3s ease-in-out;
+        position: absolute; /* Add absolute positioning */
         top: 90px; /* Position the menu below the navbar */
         left: 0;
         width: 100%;
         background-color: #757a79;
         z-index: 1000;
-        visibility: hidden; /* Initially hide the element */
+        justify-content: space-evenly; /* Center the items vertically */
+        align-items: center; /* Center the items horizontally */
     }
 
-    .navbar-links.show {
+    .show {
         max-height: 500px;
         background-color: #757a79;
-        visibility: visible; /* Show the element when active */
+        position: absolute;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
     }
 }
+
 
 /* Desktop Media Query */
 @media (min-width: 801px) {
