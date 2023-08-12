@@ -1,8 +1,10 @@
 /* Shared styles */
 body {
     margin: 0;
-    font-family: "Libre Franklin", arial, sans-serif;
-    font-size: 16px;
+    padding-top: 90px;
+    font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
 }
 
 #alex-pic {
@@ -13,6 +15,9 @@ body {
 }
 
 #navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
     height: 90px;
     background-color: #757a79;
     color: white;
@@ -36,6 +41,18 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.navbar-link:hover {
+    text-align: center;
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+}
+
+#active-link {
+	color: black;
+	cursor: default;
 }
 
 #name {
@@ -72,6 +89,7 @@ body {
         z-index: 1000;
         justify-content: space-evenly; /* Center the items vertically */
         align-items: center; /* Center the items horizontally */
+        transition: color 0.2s ease-in-out;
     }
 
     .show {
@@ -85,6 +103,10 @@ body {
         right: 0;
         z-index: 1000;
     }
+    
+    .scrolled {
+        top: 0;
+    }
 }
 
 
@@ -97,4 +119,14 @@ body {
     #menu-toggle {
         display: none; /* Hide the menu toggle button */
     }
+	
+	#intro {
+		padding-left: 20vw;
+		padding-right: 20vw;
+	}
+	
+	.section-title {
+		font-size: 64px;
+		font-weight: 600;
+	}	
 }
