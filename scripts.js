@@ -105,7 +105,7 @@ function typeAndDeleteStrings(stringsArray) {
   }
   
   // Example array of strings to be animated
-  const stringsArray = ["develops code", "runs marathons", "sucks dick"];
+  const stringsArray = ["develops code", "runs marathons", "does other fun stuff lol"];
   
   // Call the function with the array to begin the animation
   typeAndDeleteStrings(stringsArray);
