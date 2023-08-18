@@ -10,8 +10,8 @@ body {
 #alex-pic {
     width: 75px;
     height: 75px;
-    padding: 5px;
     border-radius: 50%;
+    box-shadow: 0 0 0 20px #757a79; /* Create a shadow effect to fill the border */
 }
 
 #navbar {
@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: space-between; /* Spread the elements horizontally */
     padding: 0px 10px; /* Add some padding for better spacing */
+	z-index: 1000;
 }
 
 .navbar-links {
@@ -70,6 +71,49 @@ body {
     font-size: 40px;
 }
 
+#fade-in-hi {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
+	animation-delay: 0.2s;
+}
+
+#fade-in-alex {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 1.5s; /* Adjust this value to set the delay */
+	position: relative; /* Added position property */
+}
+
+#fade-in-alex::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 5px;
+	background-color: black;
+	bottom: 7px;
+	left: 0;
+	animation: underlineAnimation 1.5s cubic-bezier(.18,0,.22,.99) forwards; /* TODO: MAKE THIS RESPONSIVE. Appears messed up on mobile */
+	animation-delay: 3s;
+}
+
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes underlineAnimation {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
 /* Mobile Media Queries */
 @media (max-width: 800px) {
     #menu-toggle {
@@ -81,14 +125,14 @@ body {
         overflow: hidden;
         visibility: hidden;
         transition: max-height 0.3s ease-in-out;
-        position: absolute; /* Add absolute positioning */
-        top: 90px; /* Position the menu below the navbar */
+        position: absolute; /* Use absolute positioning to make it stick at the bottom */
+        bottom: 0;
         left: 0;
         width: 100%;
         background-color: #757a79;
         z-index: 1000;
-        justify-content: space-evenly; /* Center the items vertically */
-        align-items: center; /* Center the items horizontally */
+        justify-content: space-evenly;
+        align-items: center;
         transition: color 0.2s ease-in-out;
     }
 
@@ -98,10 +142,9 @@ body {
         position: absolute;
         visibility: visible;
         transition: max-height 0.3s ease-in-out;
-        top: 85px;
+        top: 90px;
         left: 0;
         right: 0;
-        z-index: 1000;
     }
     
     .scrolled {
@@ -121,8 +164,8 @@ body {
     }
 	
 	#intro {
-		padding-left: 20vw;
-		padding-right: 20vw;
+		padding-left: 10vw;
+		padding-right: 10vw;
 	}
 	
 	.section-title {

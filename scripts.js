@@ -1,13 +1,13 @@
 window.onload = function() {
-    navExpander();
-    typeAndDeleteStrings(stringsArray);
-    navScrollResize();
+	navExpander();
+	navScrollResize();
+	typeAndDeleteStrings(stringsArray);
 };
 
 function navExpander() {
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-        document.querySelector(".navbar-links").classList.toggle("show");
-    });
+	document.getElementById("menu-toggle").addEventListener("click", function() {
+		document.querySelector(".navbar-links").classList.toggle("show");
+	});
 }
 
 function navScrollResize() {
@@ -15,97 +15,91 @@ function navScrollResize() {
   let currentScrollPos = window.pageYOffset;
 
   window.addEventListener("scroll", function() {
-      currentScrollPos = window.pageYOffset;
-      const navbar = document.getElementById("navbar");
+    currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById("navbar");
+    const navbarLinks = document.getElementsByClassName("navbar-links")[0]; // Select the first element TODO: Amend this to ID, not class
 
-      // Calculate the difference in scroll position
-      const scrollDiff = currentScrollPos - previousScrollPos;
+    // Calculate the difference in scroll position
+    const scrollDiff = currentScrollPos - previousScrollPos;
 
-      // Set the effectMultiplier based on scrolling direction
-      let effectMultiplier;
-      if (scrollDiff > 0) {
-          effectMultiplier = 0.75; // Increase slower when scrolling down
-      } else {
-          effectMultiplier = 1.25; // Increase faster when scrolling up
-      }
+    // Set the effectMultiplier based on scrolling direction
+    let effectMultiplier;
+    if (scrollDiff > 0) {
+      effectMultiplier = 0.75; // Increase slower when scrolling down
+    } else {
+      effectMultiplier = 1.25; // Increase faster when scrolling up
+    }
 
-      // Calculate the new height for the navbar
-      let newHeight = parseInt(getComputedStyle(navbar).height) - scrollDiff * effectMultiplier;
+    // Calculate the new height for the navbar
+    let newHeight = parseInt(getComputedStyle(navbar).height) - scrollDiff * effectMultiplier;
 
-      // Limit the new height within a reasonable range
-      newHeight = Math.min(Math.max(newHeight, 40), 90); // Limit between 40px and 90px
+    // Limit the new height within a reasonable range
+    newHeight = Math.min(Math.max(newHeight, 40), 90); // Limit between 40px and 90px
 
-      // Set the new height for the navbar
-      navbar.style.height = newHeight + "px";
+    // Set the new height for the navbar
+    navbar.style.height = newHeight + "px";
 
-      // Update the previous scroll position
-      previousScrollPos = currentScrollPos;
+    // Calculate the position for navbar-links
+    const navbarBottom = navbar.offsetTop + newHeight;
+    const navbarLinksTop = Math.min(window.innerHeight - parseInt(getComputedStyle(navbarLinks).height), navbarBottom);
+
+    // Update the style of navbar-links
+    navbarLinks.style.top = navbarLinksTop + "px";
+
+    // Update the previous scroll position
+    previousScrollPos = currentScrollPos;
   });
 }
 
+
 function typeAndDeleteStrings(stringsArray) {
-    // Get a reference to the output element where the typing animation will be displayed
-    const outputElement = document.getElementById("output"); // Change this to your output element's ID
-  
-    // Speed settings for typing, deletion, and pauses (in milliseconds)
-    const typingSpeed = 100;    // Speed at which characters are typed
-    const deletionSpeed = 50;   // Speed at which characters are deleted
-    const pauseDuration = 1000; // Duration to pause between animations
-  
-    let currentIndex = 0; // Keeps track of the current string index being animated
-  
-    // Function to type a given string on screen
-    function typeString(str) {
-      let currentCharIndex = 0; // Keeps track of the current character being typed
-  
-      // Recursive function to type the next character
-      function typeNextChar() {
-        if (currentCharIndex < str.length) {
-          // Add the current character to the output element's content
-          outputElement.textContent += str[currentCharIndex];
-          currentCharIndex++;
-  
-          // Schedule the next character typing after 'typingSpeed' milliseconds
-          setTimeout(typeNextChar, typingSpeed);
-        } else {
-          // When the string is fully typed, wait and then start the deletion animation
-          setTimeout(deleteString, pauseDuration);
-        }
-      }
-  
-      // Start typing the string
-      typeNextChar();
-    }
-  
-    // Function to delete the typed string from the output element
-    function deleteString() {
-      const currentContent = outputElement.textContent;
-  
-      if (currentContent.length > 0) {
-        // Remove the last character from the output element's content
-        outputElement.textContent = currentContent.slice(0, -1);
-  
-        // Schedule the next character deletion after 'deletionSpeed' milliseconds
-        setTimeout(deleteString, deletionSpeed);
-      } else {
-        // When the string is fully deleted, move to the next string if available
-        currentIndex++;
-  
-        if (currentIndex < stringsArray.length) {
-          // Wait and then start typing the next string
-          setTimeout(() => {
-            typeString(stringsArray[currentIndex]);
-          }, pauseDuration);
-        }
-      }
-    }
-  
-    // Start typing the first string in the array
-    typeString(stringsArray[currentIndex]);
-  }
-  
-  // Example array of strings to be animated
-  const stringsArray = ["develops code", "runs marathons", "does other fun stuff lol"];
-  
-  // Call the function with the array to begin the animation
-  typeAndDeleteStrings(stringsArray);
+	const outputElement = document.getElementById("output");
+
+	// Speed settings for typing, deletion, and pauses (in milliseconds)
+	const typingSpeed = 75;    // Speed at which characters are typed
+	const deletionSpeed = 50;   // Speed at which characters are deleted
+	const pauseDuration = 1000; // Duration to pause between animations
+	const rewriteDuration = 200; // Duration to pause between deletion and writing a enw string
+
+	// Function to type a given string on screen
+	function typeString(str) {
+		let currentCharIndex = 0;
+
+		// Recursive function to type the next character
+		function typeNextChar() {
+			if (currentCharIndex < str.length) {
+				outputElement.textContent += str[currentCharIndex];
+				currentCharIndex++;
+
+				setTimeout(typeNextChar, typingSpeed);
+			} else {
+				setTimeout(deleteString, pauseDuration);
+			}
+		}
+
+		typeNextChar();
+	}
+
+	// Function to delete the typed string from the output element
+	function deleteString() {
+		const currentContent = outputElement.textContent;
+
+		if (currentContent.length > 0) {
+			outputElement.textContent = currentContent.slice(0, -1);
+
+			setTimeout(deleteString, deletionSpeed);
+		} else {
+			// Reset currentIndex to 0 if all strings are completed
+			currentIndex = (currentIndex + 1) % stringsArray.length;
+
+			setTimeout(() => {
+				typeString(stringsArray[currentIndex]);
+			}, pauseDuration);
+		}
+	}
+
+  let currentIndex = 0;
+  typeString(stringsArray[currentIndex]);
+}
+
+const stringsArray = ["develop interesting code.", "run marathons.", "do other fun stuff lol."];
