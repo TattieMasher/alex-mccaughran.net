@@ -16,12 +16,10 @@ body {
 	padding-right: 5vw;
 }
 
-.section-title {
+.page-title {
 	font-size: 64px;
 	font-weight: 600;
 }
-
-
 
 /* Tiny screens */
 @media (max-width: 350px) {
@@ -44,7 +42,7 @@ body {
 		padding-right: 10vw;
 	}
 	
-	.section-title {
+	.page-title {
 		font-size: 64px;
 		font-weight: 600;
 	}	
@@ -57,7 +55,7 @@ body {
 		padding-right: 10vw;
 	}
 	
-	.section-title {
+	.page-title {
 		font-size: 64px;
 		font-weight: 600;
 	}	
@@ -74,6 +72,7 @@ body {
 	}
 }
 
+/* TODO: Reverse this as well */
 @keyframes underlineAnimation {
 	from {
 		width: 0;

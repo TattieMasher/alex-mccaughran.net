@@ -45,18 +45,6 @@
 	position: relative;
 }
 
-.inactive-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 5px;
-    background-color: black;
-    bottom: 7px;
-    left: 0;
-    animation-delay: 0.1s;
-    transition: width 0.2s ease-in-out;
-}
-
 .navbar-link:hover {
     text-align: center;
     text-decoration: none;
@@ -64,16 +52,27 @@
     font-weight: bold;
 }
 
-.inactive-link:hover::after {
+.inactive-link::after {
     content: '';
     position: absolute;
     width: 0;
+    height: 5px;
+    background-color: gold; /* Set the initial color for the underline */
+    opacity: 1; /* Hide the element by default */
+    bottom: 7px;
+    left: 0;
+}
+
+.inactive-link:hover::after {
+    content: '';
+    position: absolute;
     height: 3px;
     background-color: gold;
     bottom: -2px;
     left: 0;
     animation: underlineAnimation 0.75s cubic-bezier(.18,0,.22,.99) forwards;
     animation-delay: 0.1s;
+    opacity: 1; /* Show the element on hover */
 }
 
 #active-link {

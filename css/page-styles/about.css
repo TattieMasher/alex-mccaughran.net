@@ -1,5 +1,50 @@
 #about-card {
-	width: 90%;
+}
+
+#about-section {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 40px;
+}
+
+#fade-in-about1 {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
+	animation-delay: 0.2s;
+}
+
+#fade-in-about2 {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 1.5s; /* Adjust this value to set the delay */
+	position: relative; /* Added position property */
+}
+
+#fade-in-about3 {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 2.8s; /* Adjust this value to set the delay */
+	position: relative; /* Added position property */
+}
+
+#animation-container {
+	opacity: 0;
+	transition: opacity 1s;
+	min-height: 0px;	/* TODO: Set this responsively */
+	transition: min-height 1s;
+	max-height: fit-content;
+	width: calc( fit-content - 100px );
+}
+
+#animation-content {
+	font-family: monospace;
+	color: white;
+	background-color: #1f1f1f;
+}
+
+#about-link {
+	color: black;
+	cursor: default;
 }
 
 #about-overview {
@@ -7,17 +52,45 @@
 	grid-template-columns: 1fr 1fr;
 }
 
-#about-section {
+#me-pic {
+	width: 90%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#skills-section {
 	padding-left: 10vw;
 	padding-right: 10vw;
 }
 
-#animation-container {
-	height:20px;	
-	overflow: hidden;
+#skills-overview {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
+.section-title {
+	text-align: center;
+}
 
+.skill-card {
+	background-color: #ffffff;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+}
+
+.skill-card h4 {
+	margin: 0;
+	font-size: 1.2rem;
+	color: #333333;
+}
 
 /* Mobile Media Queries */
 @media (max-width: 800px) {

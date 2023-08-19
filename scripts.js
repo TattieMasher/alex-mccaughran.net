@@ -102,4 +102,4 @@ function typeAndDeleteStrings(stringsArray) {
   typeString(stringsArray[currentIndex]);
 }
 
-const stringsArray = ["develop interesting code.", "run marathons.", "do other fun stuff lol."];
+const stringsArray = ["develop interesting code.", "learn new skills.", "do other fun stuff lol."];

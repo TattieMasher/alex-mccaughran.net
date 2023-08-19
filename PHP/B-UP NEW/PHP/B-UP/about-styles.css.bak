@@ -1,0 +1,32 @@
+#about-card {
+	width: 100%;
+}
+
+#about-overview {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#about-section {
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+#animation-container {
+	height:20px;	
+	overflow: hidden;
+}
+
+
+
+/* Mobile Media Queries */
+@media (max-width: 800px) {
+	
+}
+
+
+
+/* Desktop Media Query */
+@media (min-width: 801px) {
+	
+}

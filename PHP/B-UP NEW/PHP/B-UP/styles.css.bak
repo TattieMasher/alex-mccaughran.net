@@ -1,0 +1,223 @@
+/* Shared styles */
+body {
+    margin: 0px;
+    padding-top: 90px;
+    font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+}
+
+#alex-pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px #757a79; /* Create a shadow effect to fill the border */
+	/* https://stackoverflow.com/questions/36787529/how-to-fix-blurry-image-on-transform-scale */
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+	image-rendering: pixelated;
+	z-index: 1001;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 90px;
+    background-color: #757a79;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread the elements horizontally */
+    padding: 0px 10px; /* Add some padding for better spacing */
+	z-index: 1000;
+}
+
+.navbar-links {
+    gap: 20px; /* Add spacing between links */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+	z-index: 1001;
+}
+
+.navbar-link {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+	position: relative;
+}
+
+.inactive-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: black;
+    bottom: 7px;
+    left: 0;
+    animation-delay: 0.1s;
+    transition: width 0.2s ease-in-out;
+}
+
+.navbar-link:hover {
+    text-align: center;
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+}
+
+.inactive-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    bottom: -2px;
+    left: 0;
+    animation: underlineAnimation 0.75s cubic-bezier(.18,0,.22,.99) forwards;
+    animation-delay: 0.1s;
+}
+
+#active-link {
+	color: black;
+	cursor: default;
+}
+
+#active-link::after {	/* Custom underline applied to current page link */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    bottom: -2px;
+    left: 0;
+    animation-delay: 0.1s;
+}
+
+#name {
+    font-size: 48px;
+	z-index: 1001;
+}
+
+#menu-toggle {
+	position: relative;
+    background: none;
+	color: inherit;
+	border: none;
+	top: -2px;
+	padding: 0;
+	margin-right: 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 40px;
+}
+
+#fade-in-hi {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
+	animation-delay: 0.2s;
+}
+
+#fade-in-alex {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 1.5s; /* Adjust this value to set the delay */
+	position: relative; /* Added position property */
+}
+
+#fade-in-alex::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 5px;
+	background-color: black;
+	bottom: 7px;
+	left: 0;
+	animation: underlineAnimation 1.5s cubic-bezier(.18,0,.22,.99) forwards; /* TODO: MAKE THIS RESPONSIVE. Appears messed up on mobile */
+	animation-delay: 3s;
+}
+
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes underlineAnimation {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* Mobile Media Queries */
+@media (max-width: 800px) {
+    #menu-toggle {
+        display: block; /* Display the menu toggle button */
+    }
+
+    .navbar-links {
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.3s ease-in-out;
+        position: absolute; /* Use absolute positioning to make it stick at the bottom */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #757a79;
+        z-index: 1000;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .show {
+        max-height: 500px;
+        background-color: #757a79;
+        position: absolute;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out;
+        top: 90px;
+        left: 0;
+        right: 0;
+    }
+    
+    .scrolled {
+        top: 0;
+    }
+}
+
+
+/* Desktop Media Query */
+@media (min-width: 801px) {
+    .navbar-links {
+        display: flex; /* Display the regular links */
+    }
+    
+    #menu-toggle {
+        display: none; /* Hide the menu toggle button */
+    }
+	
+	#intro {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	
+	.section-title {
+		font-size: 64px;
+		font-weight: 600;
+	}	
+}

@@ -1,0 +1,90 @@
+@import url("navbar.css");
+@import url("index.css");
+@import url("page-styles/about.css");
+
+/* Shared styles */
+body {
+    margin: 0px;
+    padding-top: 90px;
+    font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+}
+
+#intro {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.section-title {
+	font-size: 64px;
+	font-weight: 600;
+}
+
+
+
+/* Tiny screens */
+@media (max-width: 350px) {
+
+}
+
+
+/* Small Phones */
+@media (min-width: 351px) and (max-width: 554px) {
+}
+
+/* Large Phones */
+@media (min-width: 554px) and (max-width: 890px) {
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 890px) and (max-width: 970px) {
+	#intro {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	
+	.section-title {
+		font-size: 64px;
+		font-weight: 600;
+	}	
+}
+
+/* Laptops and Desktops */
+@media (min-width: 970px) {
+	#intro {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	
+	.section-title {
+		font-size: 64px;
+		font-weight: 600;
+	}	
+}
+
+
+/* Animations */
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes underlineAnimation {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* Mobile Media Queries */
+
+
+
+/* Desktop Media Query */
