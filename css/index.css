@@ -23,3 +23,8 @@
 	animation: underlineAnimation 1.5s cubic-bezier(.18,0,.22,.99) forwards; /* TODO: MAKE THIS RESPONSIVE. Appears messed up on mobile */
 	animation-delay: 3s;
 }
+
+#intro {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}

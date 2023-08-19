@@ -2,14 +2,14 @@ window.onload = function() {
 	navExpander();
 	navScrollResize();
 	
-	// Delay the execution of typeAndDeleteStrings(stringsArray) by 2 seconds, to allow for other animations to occur first
+	// Delay the execution of typeAndDeleteStrings(stringsArray) by 4.5 seconds, to allow for other animations to occur first
     setTimeout(function() {
 		const animationContainer = document.getElementById("animation-container");
 		// Style animation container
 		animationContainer.style.opacity = 1;
 		animationContainer.style.minHeight = 100 + "px";
         typeAndDeleteStrings(stringsArray);
-    }, 4500);
+    }, 4000);
 };
 
 function typeAndDeleteStrings(stringsArray) {

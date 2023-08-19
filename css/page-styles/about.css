@@ -42,7 +42,7 @@
 	background-color: #1f1f1f;
 }
 
-#about-link {
+.about-link {
 	color: black;
 	cursor: default;
 }
@@ -61,17 +61,20 @@ ul {
 }
 
 #skills-section {
+	flex-direction: column; /* Stack the items vertically on small screens */
+    align-items: center; /* Center-align items horizontally */
 	padding-left: 10vw;
 	padding-right: 10vw;
+	padding-bottom: 40px;
 }
 
 #skills-overview {
-	list-style: none;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add horizontal gap between cards */
 }
 
 .section-title {
@@ -79,18 +82,48 @@ ul {
 }
 
 .skill-card {
-	background-color: #ffffff;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
-	padding: 20px;
-	width: 200px;
-	text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    /* Add the following new properties */
+    flex: 1; /* Allow cards to distribute available space equally */
+    display: flex; /* Use flexbox to vertically center content */
+    flex-direction: column; /* Stack elements within the card */
+    justify-content: center; /* Center content vertically */
+	max-height: 150px; /* Set a maximum height for the cards */
 }
 
 .skill-card h4 {
 	margin: 0;
 	font-size: 1.2rem;
 	color: #333333;
+	word-wrap: break-word; /* Allow text to wrap within the card */
+}
+
+#uni-section {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 40px;
+}
+
+.uni-year {
+	border-top: 1px solid #333333;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#uni-prediction {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+
+
+.uni-year > * {
+	text-align: center;
+	margin: auto;
 }
 
 /* Mobile Media Queries */
