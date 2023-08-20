@@ -1,6 +1,3 @@
-#about-card {
-}
-
 #about-section {
 	padding-left: 10vw;
 	padding-right: 10vw;
@@ -9,22 +6,36 @@
 
 #fade-in-about1 {
 	opacity: 0;
-	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
+	animation: fadeInAnimation 1s ease-in-out forwards;
 	animation-delay: 0.2s;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+	height: 100%;
+}
+
+#me-pic {
+    width: 100%;
+    height: 100%;
+	 /* Crop horizontally toward the center */
+    object-fit: none;
+    object-position: center;
 }
 
 #fade-in-about2 {
 	opacity: 0;
 	animation: fadeInAnimation 1s ease-in-out forwards;
-	animation-delay: 1.5s; /* Adjust this value to set the delay */
-	position: relative; /* Added position property */
+	animation-delay: 1.5s;
+	position: relative; 
 }
 
 #fade-in-about3 {
 	opacity: 0;
 	animation: fadeInAnimation 1s ease-in-out forwards;
-	animation-delay: 2.8s; /* Adjust this value to set the delay */
-	position: relative; /* Added position property */
+	animation-delay: 2.8s;
+	position: relative; 
 }
 
 #animation-container {
@@ -50,10 +61,7 @@
 #about-overview {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-}
-
-#me-pic {
-	width: 90%;
+	gap: 10px;
 }
 
 ul {
@@ -74,7 +82,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Add horizontal gap between cards */
+    gap: 20px;
 }
 
 .section-title {
@@ -87,19 +95,19 @@ ul {
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    /* Add the following new properties */
     flex: 1; /* Allow cards to distribute available space equally */
     display: flex; /* Use flexbox to vertically center content */
     flex-direction: column; /* Stack elements within the card */
     justify-content: center; /* Center content vertically */
-	max-height: 150px; /* Set a maximum height for the cards */
+	max-height: 150px;
+	max-height: 150px;
 }
 
 .skill-card h4 {
 	margin: 0;
 	font-size: 1.2rem;
 	color: #333333;
-	word-wrap: break-word; /* Allow text to wrap within the card */
+	word-wrap: break-word; /* Allow text to wrap within the card, not yet working fully */
 }
 
 #uni-section {

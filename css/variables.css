@@ -1,0 +1,8 @@
+/* TODO: Get this working */
+:root {
+    --breakpoint-xsmall: 351px;
+    --breakpoint-small: 554px;
+    --breakpoint-medium: 890px;
+    --breakpoint-large: 970px;
+    --primary-colour: #007bff;
+  }

@@ -1,6 +1,7 @@
 @import url("navbar.css");
-@import url("index.css");
+@import url("page-styles/index.css");
 @import url("page-styles/about.css");
+@import url("page-styles/projects.css");
 
 /* Shared styles */
 body {
@@ -32,6 +33,7 @@ body {
 
 /* Tablets and Small Laptops */
 @media (min-width: 890px) and (max-width: 970px) {
+	/* TODO: Move these to just main */
 	#intro {
 		padding-left: 10vw;
 		padding-right: 10vw;
@@ -76,9 +78,3 @@ body {
 		width: 100%;
 	}
 }
-
-/* Mobile Media Queries */
-
-
-
-/* Desktop Media Query */

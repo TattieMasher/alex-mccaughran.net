@@ -1,0 +1,77 @@
+#fade-in-hi {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
+	animation-delay: 0.2s;
+}
+
+#fade-in-alex {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 1.5s;
+	position: relative;
+	font-weight: 100; /* Maybe remove */
+}
+
+#fade-in-alex::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 5px;
+	background-color: black;
+	bottom: 7px;
+	left: 0;
+	animation: underlineAnimation 1.5s cubic-bezier(.18,0,.22,.99) forwards; /* TODO: MAKE THIS RESPONSIVE. Appears messed up on mobile */
+	animation-delay: 3s;
+}
+
+#fade-in-wave {
+	opacity: 0;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 2.5s;
+	position: relative;
+}
+
+#intro {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+/* Tiny screens */
+@media (max-width: 350px) {
+
+}
+
+
+/* Small Phones */
+@media (min-width: 351px) and (max-width: 554px) {
+}
+
+/* Large Phones */
+@media (min-width: 554px) and (max-width: 890px) {
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 890px) and (max-width: 970px) {
+	#intro {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	
+	.page-title {
+		font-size: 64px;
+		font-weight: 600;
+	}	
+}
+
+/* Laptops and Desktops */
+@media (min-width: 970px) {
+	#intro {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	
+	.page-title {
+		font-size: 64px;
+		font-weight: 600;
+	}	
+}

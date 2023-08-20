@@ -1,3 +1,6 @@
+/* Import breakpoints (TODO: Also use other variables). */
+@import url("variables.css");
+
 #alex-pic {
     width: 75px;
     height: 75px;
@@ -58,7 +61,7 @@
     width: 0;
     height: 5px;
     background-color: gold; /* Set the initial color for the underline */
-    opacity: 1; /* Hide the element by default */
+    opacity: 0; /* Hide the element by default */
     bottom: 7px;
     left: 0;
 }
