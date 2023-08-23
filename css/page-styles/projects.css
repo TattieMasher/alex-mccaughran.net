@@ -1,22 +1,22 @@
 #projects-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 5vw;
 }
 .project-card {
     width: 300px;
-    background-color: crimson;
+    flex: 1;
     border-radius: 2%;
-    overflow: hidden; /* Clip contents to the card shape */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 5px;
 }
 
 .project-pic {
     height: 150px; /* TODO: Definitely increase this later */
     width: 100%;
-    background-color: black;
+    background-color: black; /* TODO: Remove when pictures have been added */
 }
 
 .project-text {

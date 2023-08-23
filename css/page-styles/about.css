@@ -19,8 +19,8 @@
 #me-pic {
     width: 100%;
     height: 100%;
-	 /* Crop horizontally toward the center */
-    object-fit: none;
+	/* Crop horizontally toward the center */
+	object-fit: cover; /* THIS WORKS SO MUCH BETTER, keeps aspect ratio and also transitions smoothly */
     object-position: center;
 }
 
@@ -136,7 +136,7 @@ ul {
 
 /* Mobile Media Queries */
 @media (max-width: 800px) {
-	
+
 }
 
 

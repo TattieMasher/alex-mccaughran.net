@@ -65,10 +65,6 @@
 
 /* Laptops and Desktops */
 @media (min-width: 970px) {
-	#intro {
-		padding-left: 10vw;
-		padding-right: 10vw;
-	}
 	
 	.page-title {
 		font-size: 64px;
