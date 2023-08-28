@@ -12,6 +12,9 @@ window.onload = function() {
     }, 4000);
 };
 
+const stringsArray = ["develop interesting code.", "listen to podcasts" ,"learn new skills.",
+	 "go bouldering.", "get lost in a good story.","travel to new places.", "do jiu jitsu.", "do other fun stuff lol."];
+
 function typeAndDeleteStrings(stringsArray) {
 	const outputElement = document.getElementById("output");
 
@@ -61,6 +64,3 @@ function typeAndDeleteStrings(stringsArray) {
   let currentIndex = 0;
   typeString(stringsArray[currentIndex]);
 }
-
-const stringsArray = ["develop interesting code.", "listen to podcasts" ,"learn new skills.",
-	 "go bouldering.", "do jiu jitsu.", "do other fun stuff lol."];

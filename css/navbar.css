@@ -32,11 +32,13 @@
 .navbar-links {
 	position: sticky;
     gap: 20px; /* Add spacing between links */
+	height: 100%;
     display: flex;
     flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 20px;
+	align-items: center; /* Center vertically within navbar */
 	z-index: 1001;
 }
 

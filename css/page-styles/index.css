@@ -2,6 +2,7 @@
 	opacity: 0;
 	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
 	animation-delay: 0.2s;
+	top: -10px;
 }
 
 #fade-in-alex {
@@ -25,10 +26,15 @@
 }
 
 #fade-in-wave {
+	display: inline-block; /* KEEP THIS. Needs this for the animation to work. */
 	opacity: 0;
-    animation: fadeInAnimation 1s ease-in-out forwards;
-	animation-delay: 2.5s;
+    animation: fadeInAnimation 1s ease-in-out forwards,
+		waveAnimation 2s infinite 2.5s;
+	animation-delay: 3.5s;
+	transform-origin: bottom right;
 	position: relative;
+	top: -5px;
+	/* float: right; /* Force far right of container */
 }
 
 #intro {
@@ -65,6 +71,10 @@
 
 /* Laptops and Desktops */
 @media (min-width: 970px) {
+	#intro {
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
 	
 	.page-title {
 		font-size: 64px;

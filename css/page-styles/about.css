@@ -44,7 +44,6 @@
 	min-height: 0px;	/* TODO: Set this responsively */
 	transition: min-height 1s;
 	max-height: fit-content;
-	width: calc( fit-content - 100px );
 }
 
 #animation-content {
