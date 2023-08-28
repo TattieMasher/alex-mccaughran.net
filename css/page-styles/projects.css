@@ -1,27 +1,35 @@
 #projects-section {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-content: center;
-    align-items: center;
-    padding: 5vw;
+    justify-items: center; /* Center items horizontally */
+    padding: 1vw;
+    gap: 10px;
 }
+
 .project-card {
     width: 300px;
-    flex: 1;
-    border-radius: 2%;
+    border-radius: 5%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-pic {
-    height: 150px; /* TODO: Definitely increase this later */
+    height: 250px; /* TODO: Definitely increase this later */
     width: 100%;
+    border-radius: inherit;
     background-color: black; /* TODO: Remove when pictures have been added */
+    object-fit: cover;
 }
 
 .project-text {
+    flex: 1;
     padding: 10px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-header {

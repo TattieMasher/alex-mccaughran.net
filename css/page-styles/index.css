@@ -13,6 +13,14 @@
 	font-weight: 100; /* Maybe remove */
 }
 
+#fade-in-end {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 3s;
+	position: relative;
+	font-weight: 100; /* Maybe remove */
+}
+
 #fade-in-alex::after {
 	content: '';
 	position: absolute;
