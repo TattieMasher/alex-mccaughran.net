@@ -7,19 +7,30 @@
     gap: 10px;
 }
 
+.project-link {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
 .project-card {
     width: 300px;
     border-radius: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin: 5px;
     display: flex;
     flex-direction: column;
+    transition: box-shadow 0.3s ease; /* Add transition for mouse-over */
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Change shadow on hover */;
 }
 
 .project-pic {
     height: 250px; /* TODO: Definitely increase this later */
     width: 100%;
-    border-radius: inherit;
+    border-radius: 5% 5% 0 0;
     background-color: black; /* TODO: Remove when pictures have been added */
     object-fit: cover;
 }
@@ -27,6 +38,7 @@
 .project-text {
     flex: 1;
     padding: 10px;
+    border-radius: inherit;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -41,5 +53,5 @@
 .project-desc {
     font-size: 16px;
     text-align: center;
-    margin-bottom: 0;
+    margin: auto;
 }

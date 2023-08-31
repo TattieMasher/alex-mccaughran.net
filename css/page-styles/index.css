@@ -36,9 +36,8 @@
 #fade-in-wave {
 	display: inline-block; /* KEEP THIS. Needs this for the animation to work. */
 	opacity: 0;
-    animation: fadeInAnimation 1s ease-in-out forwards,
-		waveAnimation 2s infinite 2.5s;
-	animation-delay: 3.5s;
+    animation: fadeInAnimation 1s ease-in-out forwards 3.5s,
+		waveAnimation 2s infinite 4.5s;
 	transform-origin: bottom right;
 	position: relative;
 	top: -5px;

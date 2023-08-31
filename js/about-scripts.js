@@ -13,7 +13,8 @@ window.onload = function() {
 };
 
 const stringsArray = ["develop interesting code.", "listen to podcasts" ,"learn new skills.",
-	 "go bouldering.", "get lost in a good story.","travel to new places.", "do jiu jitsu.", "do other fun stuff lol."];
+	 "go bouldering.", "get lost in a good story.","travel to new places.", "do jiu jitsu.", 
+	 "solve problems.", "do other fun stuff lol."];
 
 function typeAndDeleteStrings(stringsArray) {
 	const outputElement = document.getElementById("output");
