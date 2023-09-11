@@ -14,7 +14,7 @@ window.onload = function() {
 
 const stringsArray = ["develop interesting code.", "listen to podcasts" ,"learn new skills.",
 	 "go bouldering.", "get lost in a good story.","travel to new places.", "do jiu jitsu.", 
-	 "solve problems.", "do other fun stuff lol."];
+	 "solve problems.", "drink coffee."];
 
 function typeAndDeleteStrings(stringsArray) {
 	const outputElement = document.getElementById("output");
@@ -49,6 +49,7 @@ function typeAndDeleteStrings(stringsArray) {
 		const currentContent = outputElement.textContent;
 
 		if (currentContent.length > 0) {
+			// Set outputted text to current text, missing last character
 			outputElement.textContent = currentContent.slice(0, -1);
 
 			setTimeout(deleteString, deletionSpeed);

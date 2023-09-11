@@ -56,7 +56,7 @@ function navScrollResize() {
 	  // Apply proportional scaling to the image icon
 	  navIcon.style.transform = `scale(${scale})`;
   
-	  // Calculate the inverse of the scaling factor for box shadow size
+	  // Calculate the inverse of the scaling factor for box shadow size around navbar icon
 	  const boxShadowScale = 1 / scale;
   
 	  // Calculate the desired box shadow size based on the inverse scaling factor
