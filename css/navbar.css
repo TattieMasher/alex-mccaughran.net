@@ -160,6 +160,7 @@
     }
 
     .show {
+        height: fit-content;
         max-height: 500px;
         background-color: #757a79;
         position: absolute;
