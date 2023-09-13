@@ -11,22 +11,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="js/scripts.js"></script>
-        <script type="text/javascript" src="js/projects-scripts.js"></script>
+        <script type="text/javascript" src="js/about-scripts.js"></script>
         <title>Alex McCaughran</title>
     </head>
     <body>
-        <nav id="navbar">
-            <img id="alex-pic" src="images/Us.png">
-            <h1 id="name">ALEX MᶜC<span id="end-name">AUGHRAN</span></h1>
-            <button id="menu-toggle">&#9776;</button>
-            <ul class="navbar-links">
-                <li><a class="navbar-link inactive-link" href="index.html">Home</a></li>
-                <li><a class="navbar-link inactive-link" href="about.html">About</a></li>
-                <li><a id="active-link" class="navbar-link">Projects</a></li>
-                <li><a class="navbar-link inactive-link" href="#">Contact</a></li>
-            </ul>
-        </nav>        
-        <main>
+        <?php include('config.php');    // Include config data
+        include('navbar.php');          // Incldue dynamic navbar
+        ?>
             <section id="projects-section">
                 <a class="project-link" href="projects/main-template.html"><div class="project-card">
                     <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
@@ -65,6 +56,5 @@
                     </div>
                 </div>
             </section>
-        </main>
     </body>
 </html>

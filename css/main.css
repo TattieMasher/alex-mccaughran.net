@@ -81,12 +81,22 @@ body {
 }
 
 @keyframes waveAnimation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(7.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-4.0deg) }
-   30% { transform: rotate(7.0deg) }
-   40% { transform: rotate(-2.0deg) }
-   50% { transform: rotate(5.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+	 0% { transform: rotate( 0.0deg) }
+	10% { transform: rotate(7.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+	20% { transform: rotate(-4.0deg) }
+	30% { transform: rotate(7.0deg) }
+	40% { transform: rotate(-2.0deg) }
+	50% { transform: rotate(5.0deg) }
+	60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes fadeInHeightAllow {
+	from {
+		height: 0;
+	}
+	to {
+		height: fit-content;
+	}
+	
 }

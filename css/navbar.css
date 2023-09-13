@@ -24,8 +24,8 @@
     color: white;
     display: flex;
     align-items: center;
+    padding: 0px 0px 10px 10px;
     justify-content: space-between; /* Spread the elements horizontally */
-    padding: 0px 10px; /* Add some padding for better spacing */
 	z-index: 1000;
 }
 
@@ -36,6 +36,7 @@
     flex-direction: row;
     list-style: none;
     margin: 0;
+    margin-left: auto;
     padding: 20px;
 	align-items: center; /* Center vertically within navbar */
 	z-index: 1001;
@@ -49,7 +50,7 @@
 	position: relative;
 }
 
-.navbar-link:hover {
+.inactive-link:hover {
     text-align: center;
     text-decoration: none;
     color: gold;
@@ -79,12 +80,12 @@
     opacity: 1; /* Show the element on hover */
 }
 
-#active-link {
+.active-link {
 	color: black;
 	cursor: default;
 }
 
-#active-link::after {	/* Custom underline applied to current page link */
+.active-link::after {	/* Custom underline applied to current page link */
     content: '';
     position: absolute;
     width: 100%;
@@ -96,6 +97,7 @@
 }
 
 #name {
+    margin: auto;
     font-size: 48px;
 	z-index: 1001;
 }
@@ -105,9 +107,10 @@
     background: none;
 	color: inherit;
 	border: none;
-	top: -2px;
 	padding: 0;
-	margin-right: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+	margin-right: 10px;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -129,7 +132,6 @@
 }
 
 /* TODO: Define these in a separate sheet to allow for consistency */
-
 /* Tiny screens */
 @media (max-width: 350px) {
 	#name {
@@ -139,6 +141,11 @@
 	#end-name {
 		display: none;
 	}
+
+    #menu-toggle {
+        display: block;
+        font-size: 26px;
+    }
 
     .navbar-links {
 		gap: 0px;
@@ -161,57 +168,6 @@
 
     .show {
         height: fit-content;
-        max-height: 500px;
-        background-color: #757a79;
-        position: absolute;
-        visibility: visible;
-        transition: max-height 2s linear;
-        top: 90px;
-        left: 0;
-        right: 0;
-    }
-    
-    .scrolled {
-        top: 0;
-    }
-}
-
-/* Minimum screen size */
-@media (max-width: 351px) {
-    #name {
-		font-size: 26px;
-	}
-	
-	#end-name {
-		display: none;
-	}
-	
-    #menu-toggle {
-        display: block; /* Display the menu toggle button */
-		font-size: 26px;
-        height: 26px;
-    }
-
-    .navbar-links {
-		gap: 0px;
-		font-size: 16px;
-        max-height: 0;
-        overflow: hidden;
-        visibility: hidden;
-        transition: max-height 2s linear;
-        position: absolute; /* Use absolute positioning to make it stick at the bottom */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-        background-color: #757a79;
-        z-index: 1002;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .show {
         max-height: 500px;
         background-color: #757a79;
         position: absolute;

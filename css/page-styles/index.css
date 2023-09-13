@@ -10,13 +10,13 @@
 	animation: fadeInAnimation 1s ease-in-out forwards;
 	animation-delay: 1.5s;
 	position: relative;
-	font-weight: 100; /* Maybe remove */
+	font-weight: 100;
 }
 
 #fade-in-end {
 	opacity: 0;
 	animation: fadeInAnimation 1s ease-in-out forwards;
-	animation-delay: 3s;
+	animation-delay: 3.5s;
 	position: relative;
 	font-weight: 100; /* Maybe remove */
 }
@@ -41,12 +41,51 @@
 	transform-origin: bottom right;
 	position: relative;
 	top: -5px;
-	/* float: right; /* Force far right of container */
+}
+
+.fade-in-index-content_1 {
+	height: 0;
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards 5.5s,
+	fadeInHeightAllow 0.1s linear forwards 4.5s;
+}
+
+.fade-in-index-content_2 {
+	height: 0;
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards 7.5s,
+	fadeInHeightAllow 0.1s linear forwards 6.5s;
+}
+
+.fade-in-index-content_3 {
+	height: 0;
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards 9.5s,
+	fadeInHeightAllow 0.1s linear forwards 8.5s;
+}
+
+.fade-in-index-content_4 {
+	height: 0;
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards 11.5s,
+	fadeInHeightAllow 0.1s linear forwards 10.5s;
 }
 
 #intro {
 	padding-left: 5vw;
 	padding-right: 5vw;
+}
+
+/* TODO: Sort this, currently just a workaround to make "I'm Alex" better on screens <295px wide*/
+@media (max-width: 295px) {
+	#fade-in-hi {
+		font-size: 48px;
+	}
+
+	#fade-in-alex::after {
+		height: 4px;
+		bottom: 3px;
+	}
 }
 
 /* Tiny screens */

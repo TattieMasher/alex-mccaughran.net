@@ -15,17 +15,9 @@
         <title>Alex McCaughran</title>
     </head>
     <body>
-        <nav id="navbar">
-            <img id="alex-pic" src="images/Us.png">
-            <h1 id="name">ALEX MᶜC<span id="end-name">AUGHRAN</span></h1>
-            <button id="menu-toggle">&#9776;</button>
-            <ul class="navbar-links">
-                <li><a class="navbar-link inactive-link" href="index.html">Home</a></li>
-                <li><a id="active-link" class="navbar-link">About</a></li>
-                <li><a class="navbar-link inactive-link" href="projects.html">Projects</a></li>
-                <li><a class="navbar-link inactive-link" href="#">Contact</a></li>
-            </ul>
-        </nav>        
+        <?php include('config.php');    // Include config data
+        include('navbar.php');          // Incldue dynamic navbar
+        ?>  
         <main>
             <section id="about-section">
 				<h1 id="fade-in-about1" class="section-title">Hi,<span id="fade-in-about2"> nice to meet you!</span></h1>
@@ -35,15 +27,11 @@
                         <div id="animation-container">
                             <span id="animation-content">I love to <span id="output"></span></span>
                         </div>
-                        <div>
+                        <div id="about-card-description">
                             <p>
                                 I'm a 24 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> student, studying whilst working full-time as a Techinical Analyst for Celtic FC.
-                            </p>
-                            <p>
-                                I’m a friendly, goal-driven person who thrives when encountering new problems and finding solutions to them. I enjoy high-pressure environments- pressure makes diamonds after all! Learning new skills is something I truly enjoy more than anything else.
-                            </p>
-                            <p>
-                                As hobbies, I enjoy martial arts, gaming, playing guitar and keeping up with new tech. Some topics I find particularly interesting are cloud-computing, cyber security, UX and the emergence of machine learning.
+                                <br><br>
+                                I'm friendly, goal-driven and I thrive when encountering new problems and finding solutions to them.
                             </p>
                         </div>
 					</div>
