@@ -24,7 +24,6 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 0px 0px 10px 10px;
     justify-content: space-between; /* Spread the elements horizontally */
 	z-index: 1000;
 }
@@ -35,7 +34,6 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0;
     margin-left: auto;
     padding: 20px;
 	align-items: center; /* Center vertically within navbar */
@@ -97,7 +95,7 @@
 }
 
 #name {
-    margin: auto;
+    margin-left: auto;
     font-size: 48px;
 	z-index: 1001;
 }
