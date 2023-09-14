@@ -28,4 +28,5 @@
 				<br><br>
             </section>
         </main>
-</body>
+        <?php include('components/footer.php');?>
+    </body>

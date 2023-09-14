@@ -18,43 +18,44 @@
         <?php include('config.php');        // Include config data
         include('components/navbar.php');   // Incldue dynamic navbar
         ?>
-            <section id="projects-section">
-                <a class="project-link" href="projects/main-template.html"><div class="project-card">
-                    <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
-                    <div class="project-text">
-                        <h5 class="project-header">Android Password Manager</h5>
-                        <p class="project-desc">
-                            A simple android app which creates an SQLite table containing account details and can generate complex, secure passwords.
-                        </p>
-                    </div>
-                </div></a>
-                <div class="project-card">
-                    <div class="project-pic"></div>
-                    <div class="project-text">
-                        <h5 class="project-header">Compound Interest Android App</h5>
-                        <p class="project-desc">
-                            Lorem ipsum. This is an app which does something lol, what more description do you need?
-                        </p>
-                    </div>
+        <section id="projects-section">
+            <a class="project-link" href="projects/main-template.html"><div class="project-card">
+                <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
+                <div class="project-text">
+                    <h5 class="project-header">Android Password Manager</h5>
+                    <p class="project-desc">
+                        A simple android app which creates an SQLite table containing account details and can generate complex, secure passwords.
+                    </p>
                 </div>
-                <div class="project-card">
-                    <div class="project-pic"></div>
-                    <div class="project-text">
-                        <h5 class="project-header">Android app</h5>
-                        <p class="project-desc">
-                            Lorem ipsum. This is an app which does something lol, what more description do you need?
-                        </p>
-                    </div>
+            </div></a>
+            <div class="project-card">
+                <div class="project-pic"></div>
+                <div class="project-text">
+                    <h5 class="project-header">Compound Interest Android App</h5>
+                    <p class="project-desc">
+                        Lorem ipsum. This is an app which does something lol, what more description do you need?
+                    </p>
                 </div>
-                <div class="project-card">
-                    <div class="project-pic"></div>
-                    <div class="project-text">
-                        <h5 class="project-header">Android app</h5>
-                        <p class="project-desc">
-                            Lorem ipsum. This is an app which does something lol, what more description do you need?
-                        </p>
-                    </div>
+            </div>
+            <div class="project-card">
+                <div class="project-pic"></div>
+                <div class="project-text">
+                    <h5 class="project-header">Android app</h5>
+                    <p class="project-desc">
+                        Lorem ipsum. This is an app which does something lol, what more description do you need?
+                    </p>
                 </div>
-            </section>
+            </div>
+            <div class="project-card">
+                <div class="project-pic"></div>
+                <div class="project-text">
+                    <h5 class="project-header">Android app</h5>
+                    <p class="project-desc">
+                        Lorem ipsum. This is an app which does something lol, what more description do you need?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <?php include('components/footer.php');?>
     </body>
 </html>

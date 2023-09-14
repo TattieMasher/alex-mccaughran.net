@@ -28,11 +28,8 @@
 				<div id="about-overview">
 					<div class="about-card">
                         <div id="about-card-description">
-                            <p>
-                                I'm a 24 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> student, studying whilst working full-time as a Techinical Analyst for Celtic FC.
-                                <br><br>
-                                I'm friendly, goal-driven and I thrive when encountering new problems and finding solutions to them.
-                            </p>
+                            <p>I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> student, studying whilst working full-time as a Techinical Analyst for Celtic FC.</p>
+                            <p>I'm friendly, goal-driven and I thrive when encountering new problems and finding solutions to them.</p>
                         </div>
 					</div>
 					<div class="about-card">
@@ -42,10 +39,8 @@
                     </div>                    
 				</div>
                 <div id="about-description">
-                    <p>
-                        I have a background in customer service, but a passion for computing! I'm now looking for a role that will allow me to express my love for creating clean, creative code.
-                        <br><br>For a long time, I've dreamt of breaking out into the software development, but lacked the skills to do so. I've been building those skills over time, and I'm now looking to plant the seedss for a fruitful career in my dream industry.
-                    </p>
+                    <p>I have a background in customer service, but a passion for computing! I'm now looking for a role that will allow me to express my love for creating clean, creative code.</p>
+                    <p>For a long time, I've dreamt of breaking out into the software development, but lacked the skills to do so. I've been building those skills over time, and I'm now looking to plant the seedss for a fruitful career in my dream industry.</p>
                 </div>
             </section>
             <section id="skills-section">
@@ -77,20 +72,23 @@
 
             <section id="uni-section">
                 <h3 class="section-title">University</h3>
-                <div class="about-description">
+                <div id="uni-summary">
                     <p>During the first lockdown, I took a decisive step towards my dream career in software development by enrolling with the Open University degree program while balancing full-time work.                    </p>
                     <p>Since then, I've maintained an excellent grade by using excellent time-management, fuelled by a deep desire to exceed at my commitments.</p>
-                </div>
-                <div id="uni-summary">
-                    <p>Throughout my time at the Open University, I have learned about software development, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and much more!</p>
-                    <p>Areas that have interested me most so far are studies on object-oriented programming, system administration, database querying (SQL), user experience & networking. Throughout my studies I have gained experience with a wide array of programming languages such as Java, Python, HTML, Javascript and PHP. I have also undertaken various projects within my (limited) free time, as my Github will show.</p>
+                    <p>Throughout my time at the Open University, I have learned about software development, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and much more(!), but <b>Object-oriented programming has intereseted me the most by far.</b></p>
                 </div>
 
-                <?php include('uni-slider.php');?>
-                <p>I hope that now– with my developing skills and my eagerness to learn more– that I will make a good candidate to be considered for a Junior Developer position, with room to grow further (the sky's the limit!).</p>
+                <?php include('components/uni-slider.php');?>
+            </section>
+
+            <section id="about-section">
+                <h3 class="section-title">So . . .</h3>
+                <p>I hope that now- with my developing skills and my eagerness to learn more– that I will make a good candidate to be considered for a Junior Developer position, with room to grow into my full potential.</p>
+
+                <h3 class="section-title">The sky's the limit!</h3>
             </section>
         </main>
-
         <script type="text/javascript" src="js/slider.js"></script> <!-- Uni slider functionality -->
+        <?php include('components/footer.php');?>
     </body>
 </html>

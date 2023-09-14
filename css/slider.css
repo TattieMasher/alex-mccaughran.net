@@ -70,10 +70,6 @@
     align-items: center;
 }
 
-.slide-title {
-    
-}
-
 .slide-inner-grid {
     display: grid;
     grid-template-columns: 95% 5%;

@@ -1,7 +1,5 @@
 #about-section {
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-bottom: 40px;
+	padding: 0 2vw 20px 2vw;
 }
 
 #fade-in-about1 {
@@ -74,9 +72,7 @@ ul {
 #skills-section {
 	flex-direction: column; /* Stack the items vertically on small screens */
     align-items: center; /* Center-align items horizontally */
-	padding-left: 10vw;
-	padding-right: 10vw;
-	padding-bottom: 40px;
+	padding: 0 2vw 20px 2vw;
 }
 
 #skills-overview {
@@ -114,7 +110,7 @@ ul {
 }
 
 #uni-section {
-	padding: 2vw;
+	padding: 0 2vw 20px 2vw;
 }
 
 .uni-year {
