@@ -12,6 +12,7 @@
     -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
     transform: translateZ(0);
 	image-rendering: pixelated;
+    margin-left: 5px;
 	z-index: 1001;
 }
 
@@ -96,6 +97,7 @@
 
 #name {
     margin-left: auto;
+    margin-right: auto;
     font-size: 48px;
 	z-index: 1001;
 }
@@ -106,8 +108,6 @@
 	color: inherit;
 	border: none;
 	padding: 0;
-    margin-bottom: auto;
-    margin-top: auto;
 	margin-right: 10px;
 	font: inherit;
 	cursor: pointer;
@@ -273,13 +273,13 @@
 }
 
 /* Tablets and Small Laptops */
-@media (min-width: 890px) and (max-width: 970px) {
+@media (min-width: 890px) and (max-width: 974px) {
 	#name {
 		font-size: 40px;
 	}
 }
 
 /* Laptops and Desktops */
-@media (min-width: 970px) {
+@media (min-width: 975px) {
 
 }

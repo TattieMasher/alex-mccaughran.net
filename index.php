@@ -15,8 +15,8 @@
         <title>Alex McCaughran</title>
     </head>
     <body>
-        <?php include('config.php');    // Include config data
-        include('navbar.php');          // Incldue dynamic navbar
+        <?php include('config.php');        // Include config data
+        include('components/navbar.php');   // Incldue dynamic navbar
         ?>
         <main>
             <section id="intro">
@@ -26,7 +26,6 @@
                 <p class="fade-in-index-content_3"> I began building my website with the idea of showcasing some of my potential, store/deploy projects (and possibly blog their creation). Plus, I thought it would be fun to put something of my own out there!</p>
 				<p class="fade-in-index-content_4">I hope these spare-time efforts will add weight and credibility to my ability to write clean, functional code to do interesting things.</p>
 				<br><br>
-
             </section>
         </main>
 </body>

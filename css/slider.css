@@ -1,0 +1,99 @@
+.uni-link {
+    color: white;
+	cursor: default;
+}
+
+.slider ul {
+    list-style: none;
+    padding: 0;
+}
+
+.slider li {
+    margin-top: 5%;
+}
+
+.active-uni-link {
+    font-weight: bold;
+}
+
+.slider {
+    background-color: teal;
+    max-width: 1400px;
+    color: #fff;
+    grid-template-columns: 35% 65%;
+    position: relative;
+    display: grid;
+}
+
+.slider-description {
+    margin: auto;
+    padding: 20px;
+}
+
+.slider-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    position: absolute;
+    left: 65%;
+}
+
+.slider-button:hover {
+    background-color: #555; /* Change the color on hover */
+}
+
+#prev-slide-button {
+    top: 5px; /* Positioned at top */
+}
+
+#next-slide-button {
+    bottom: 5px; /* Position at bottom */
+}
+
+.slides {
+    width: 100%; /* Take up full available width */
+    overflow: hidden;
+    max-height: 500px; /* TODO: Choose a good size, maybe responsive 100vh? */
+    scrollbar-width: none;
+}
+
+.slide {
+    min-height: calc(100% - 80px);
+    background-color: skyblue;
+    display: flex;
+    padding: 40px;
+    color: #333;
+    align-items: center;
+}
+
+.slide-title {
+    
+}
+
+.slide-inner-grid {
+    display: grid;
+    grid-template-columns: 95% 5%;
+    gap: 5px;
+}
+
+.slide-inner-grid h4 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.slide:nth-child(even) {
+    background-color: palegreen;
+}
+
+#download-uni-grades-button {
+    position: absolute;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 25%;
+    width: 64px;
+    height: 64px;
+}

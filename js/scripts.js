@@ -40,6 +40,13 @@ function navScrollResize() {
   
 	  // Set the new height for the navbar
 	  navbar.style.height = newHeight + "px";
+	  
+	  // Calculate the position for navbar-links
+	  const navbarBottom = navbar.offsetTop + newHeight;
+	  const navbarLinksTop = Math.min(window.innerHeight - parseInt(getComputedStyle(navbarLinks).height), navbarBottom);
+  
+	  // Update the style of navbar-links
+	  navbarLinks.style.top = navbarLinksTop + "px";
   
 	  // Calculate the proportional scaling factor based on navbar height
 	  const initialNavbarHeight = 90; // Default navbar height in pixels

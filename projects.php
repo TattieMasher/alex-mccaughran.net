@@ -15,8 +15,8 @@
         <title>Alex McCaughran</title>
     </head>
     <body>
-        <?php include('config.php');    // Include config data
-        include('navbar.php');          // Incldue dynamic navbar
+        <?php include('config.php');        // Include config data
+        include('components/navbar.php');   // Incldue dynamic navbar
         ?>
             <section id="projects-section">
                 <a class="project-link" href="projects/main-template.html"><div class="project-card">
