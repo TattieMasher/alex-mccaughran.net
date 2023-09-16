@@ -9,7 +9,7 @@
     </div>
     <div class="prompt">
         <span class="input-line">
-            <span class="input-prefix">visitor@alexs-site<span class="input-colon">:</span><span class="input-path">~/About</span><span class="dollar-sign">$</span></span><span id="command-input"></span>
+            <span class="input-prefix">visitor@alexs-site<span class="input-colon">:</span><span class="input-path">~/About</span><span class="dollar-sign">$</span></span><span id="command-input"></span><span id="command-cursor">█</span>
         </span>
     </div>
 </div>

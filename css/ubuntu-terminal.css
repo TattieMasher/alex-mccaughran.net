@@ -81,8 +81,9 @@
     word-wrap: break-word; /* TODO: Maybe remove. This is realistic, but doesn't read amazingly */
 }
 
-.output {
-    margin-top: 10px;
+#command-cursor {
+    color: white;
+    font-weight: normal;
 }
 
 

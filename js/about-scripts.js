@@ -6,6 +6,8 @@ window.onload = function() {
     setTimeout(function() {
         typeAndDeleteStrings(stringsArray);
     }, 4000);
+
+	flickerCursor();
 };
 
 const stringsArray = ["develop interesting code", "play guitar", "listen to podcasts" ,"learn new skills",
@@ -59,6 +61,18 @@ function typeAndDeleteStrings(stringsArray) {
 		}
 	}
 
-  let currentIndex = 0;
-  typeString(stringsArray[currentIndex]);
+	let currentIndex = 0;
+	typeString(stringsArray[currentIndex]);
+}
+
+// Function to create the flickering cursor effect that Linux terminal has
+function flickerCursor() {
+	const cursor = document.getElementById("command-cursor"); // Get the existing cursor span
+
+	if (cursor) {
+		// Toggle its visibility every 0.75 seconds
+		setInterval(function () {
+			cursor.style.visibility = cursor.style.visibility === "hidden" ? "visible" : "hidden";
+		}, 750);
+	}
 }
