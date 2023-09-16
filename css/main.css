@@ -30,9 +30,7 @@ main {
 
 /* Tiny screens */
 @media (max-width: 350px) {
-
 }
-
 
 /* Small Phones */
 @media (min-width: 351px) and (max-width: 554px) {

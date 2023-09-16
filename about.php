@@ -22,21 +22,21 @@
         <main>
             <section id="about-section">
 				<h1 id="fade-in-about1" class="section-title">Hi,<span id="fade-in-about2"> nice to meet you!</span></h1>
+                <p>I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software) student</a>, studying whilst working full-time as a Techinical Analyst for Celtic FC. I'm now looking to pursue opportunities in my dream sector- software development.</p>
                 <?php include('components/terminal.php'); ?>
                 <div id="about-overview">
 					<div class="about-card">
-                        <p class="about-card-description">I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> student, studying whilst working full-time as a Techinical Analyst for Celtic FC.</p>
-                        <p class="about-card-description">I have a background in customer service, with a recent history in IT-realted roles, but a passion for computing!</p>
-                        <p class="about-card-description">I'm now looking for a role that will allow me to express my love for creating clean, creative code.</p>
-                        <p class="about-card-description-remove">For a long time, I've dreamt of breaking out into the software development, but lacked the skills to do so.</p>
-                        <p class="about-card-description-remove">By studying part-time, I've been building those skills and I'm now looking to plant the seeds for a fruitful career in my dream industry.</p>
+                        <p class="about-card-description"></p>
+                        <p class="about-card-description">My primary concern in my current role is to provide valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
+                        <p class="about-card-description">My three-man team and I are also responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these.</p>
+                        <p class="about-card-description-remove">We constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
+                        <p class="about-card-description-remove"></p>
 					</div>
                     <div class="image-container">
                         <img id="me-pic" src="images/Me-500x500.png" alt="Me">
                     </div>
                     <div class="about-card-alt">
-                        <p class="about-card-description-alt">For a long time, I've dreamt of breaking out into the software development, but lacked the skills to do so.</p>
-                        <p class="about-card-description-alt">By studying part-time, I've been building those skills and I'm now looking to plant the seeds for a fruitful career in my dream industry.</p>
+                        <p class="about-card-description-alt"></p>
                     </div>
 				</div>
             </section>
@@ -74,7 +74,6 @@
                     <p>Since then, I've maintained an excellent grade by using excellent time-management, fuelled by a deep desire to exceed at my commitments. If my current trajectory is maintained, <b>I will graduate comfortably with a First Class Honours (1:1).</b></p>
                     <p>Throughout my time at the Open University, I have learned about software development, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and the list goes on(!), but <b>object-oriented programming has intereseted me the most by far.</b></p>
                 </div>
-
                 <?php include('components/uni-slider.php');?>
             </section>
             <section id="about-section">

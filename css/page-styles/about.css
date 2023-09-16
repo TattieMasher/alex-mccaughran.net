@@ -1,4 +1,5 @@
 #about-section {
+	padding-top: 20px;
 }
 
 #fade-in-about1 {
@@ -23,7 +24,7 @@
     height: 100%;
 	/* Crop horizontally toward the center */
 	object-fit: cover; /* THIS WORKS SO MUCH BETTER, keeps aspect ratio and also transitions smoothly */
-    object-position: center;
+    object-position: 47.5% 50%;
 }
 
 #animation-container {
@@ -73,6 +74,7 @@ ul {
 }
 
 #skills-section {
+	padding-top: 20px;
 	flex-direction: column; /* Stack the items vertically on small screens */
     align-items: center; /* Center-align items horizontally */
 }
@@ -108,7 +110,11 @@ ul {
 	animation: growOnHoverAnimation 4s infinite,
 		waveSkillAnimation 2s forwards 0.5s;
 }
-  
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .skill-card h4 {
 	margin: 0;
@@ -118,6 +124,7 @@ ul {
 }
 
 #uni-section {
+	padding-top: 20px;
 }
 
 .uni-link {
@@ -136,6 +143,11 @@ ul {
 	text-align: center;
 }
 
+.slider {
+	margin: 0 auto 0 auto;
+	width: 80%;
+}
+
 /* TODO: Sort this, currently just a workaround to make "I'm Alex" better on screens <295px wide*/
 @media (max-width: 295px) {
 }
@@ -151,10 +163,17 @@ ul {
 	}
 }
 
+@media (max-width: 650px) {
+	#about-overview {
+		justify-content: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5px;
+	}
+}
 
 /* Small Phones */
 @media (min-width: 351px) and (max-width: 554px) {
-	
 }
 
 /* Large Phones */
