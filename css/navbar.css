@@ -31,6 +31,7 @@
 
 .navbar-links {
 	position: sticky;
+    margin: 0;
     gap: 20px; /* Add spacing between links */
     display: flex;
     flex-direction: row;
@@ -147,6 +148,7 @@
 
     .navbar-links {
 		gap: 0px;
+        margin: 0;
 		font-size: 12px;
         max-height: 0;
         overflow: hidden;
@@ -198,6 +200,7 @@
 
     .navbar-links {
 		gap: 0px;
+        margin: 0;
 		font-size: 16px;
         max-height: 0;
         overflow: hidden;
@@ -243,6 +246,7 @@
 
     .navbar-links {
         max-height: 0;
+        margin: 0;
         overflow: hidden;
         visibility: hidden;
         transition: max-height 2s linear;

@@ -1,7 +1,10 @@
 @import url("navbar.css");
 @import url("footer.css");
+
 @import url("page-styles/index.css");
+
 @import url("page-styles/about.css");
+@import url("ubuntu-terminal.css");
 @import url("slider.css");
 @import url("page-styles/projects.css");
 
@@ -12,6 +15,12 @@ body {
     font-family: "Montserrat", sans-serif;
 	font-weight: 400;
     font-size: 20px;
+}
+
+main {
+	min-height: calc(100vh - 143px - 64px);
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 
 .page-title {
@@ -35,29 +44,10 @@ body {
 
 /* Tablets and Small Laptops */
 @media (min-width: 890px) and (max-width: 970px) {
-	/* TODO: Move these to just main */
-	#intro {
-		padding-left: 10vw;
-		padding-right: 10vw;
-	}
-	
-	.page-title {
-		font-size: 64px;
-		font-weight: 600;
-	}	
 }
 
 /* Laptops and Desktops */
 @media (min-width: 970px) {
-	#intro {
-		padding-left: 10vw;
-		padding-right: 10vw;
-	}
-	
-	.page-title {
-		font-size: 64px;
-		font-weight: 600;
-	}	
 }
 
 
@@ -90,6 +80,21 @@ body {
 	50% { transform: rotate(5.0deg) }
 	60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes growOnHoverAnimation {
+	0%, 100% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.05);
+	}
+	50% {
+		transform: scale(0.95);
+	}
+	75% {
+		transform: scale(1.05);
+	}
 }
 
 @keyframes fadeInHeightAllow {

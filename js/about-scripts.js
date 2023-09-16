@@ -4,20 +4,16 @@ window.onload = function() {
 	
 	// Delay the execution of typeAndDeleteStrings(stringsArray) by 4.5 seconds, to allow for other animations to occur first
     setTimeout(function() {
-		const animationContainer = document.getElementById("animation-container");
-		// Style animation container
-		animationContainer.style.opacity = 1;
-		animationContainer.style.minHeight = 100 + "px";
         typeAndDeleteStrings(stringsArray);
     }, 4000);
 };
 
-const stringsArray = ["develop interesting code.", "listen to podcasts" ,"learn new skills.",
-	 "go bouldering.", "get lost in a good story.","travel to new places.", "do jiu jitsu.", 
-	 "solve problems.", "drink coffee."];
+const stringsArray = ["develop interesting code", "play guitar", "listen to podcasts" ,"learn new skills",
+	 "go bouldering", "get lost in a good story","travel to new places", "do jiu jitsu", 
+	 "solve problems", "drink coffee"];
 
 function typeAndDeleteStrings(stringsArray) {
-	const outputElement = document.getElementById("output");
+	const outputElement = document.getElementById("command-input");
 
 	// Speed settings for typing, deletion, and pauses (in milliseconds)
 	const typingSpeed = 75;    // Speed at which characters are typed

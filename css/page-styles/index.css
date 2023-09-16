@@ -72,8 +72,7 @@
 }
 
 #intro {
-	padding-left: 5vw;
-	padding-right: 5vw;
+	
 }
 
 /* TODO: Sort this, currently just a workaround to make "I'm Alex" better on screens <295px wide*/
@@ -105,8 +104,6 @@
 /* Tablets and Small Laptops */
 @media (min-width: 890px) and (max-width: 970px) {
 	#intro {
-		padding-left: 10vw;
-		padding-right: 10vw;
 	}
 	
 	.page-title {
@@ -118,8 +115,6 @@
 /* Laptops and Desktops */
 @media (min-width: 970px) {
 	#intro {
-		padding-left: 10vw;
-		padding-right: 10vw;
 	}
 	
 	.page-title {

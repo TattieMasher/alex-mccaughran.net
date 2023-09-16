@@ -113,7 +113,6 @@
                             <h4><a class="about-link" href="https://www.open.ac.uk/courses/qualifications/details/tm470">TM470 - The Computing and IT Project</a></h4>
                         </div>
                     </li>
-                    
                 </ul>
             </div>
         </div>
