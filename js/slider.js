@@ -17,8 +17,11 @@
                 // Show the current slide by index
                 function showCurrentSlide() {
                     if (slides && slides[currentSlideIndex]) {
+                        // Calculate the top position of the current slide
+                        const topPosition = slides[currentSlideIndex].offsetTop - slide_container.offsetTop;
+
                         slide_container.scrollTo({
-                            top: slides[currentSlideIndex].offsetTop,
+                            top: topPosition,
                             behavior: "smooth"
                         });
 

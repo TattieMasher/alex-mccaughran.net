@@ -26,23 +26,21 @@
                 <?php include('components/terminal.php'); ?>
                 <div id="about-overview">
 					<div class="about-card">
-                        <p class="about-card-description"></p>
                         <p class="about-card-description">My primary concern in my current role is to provide valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
                         <p class="about-card-description">My three-man team and I are also responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these.</p>
                         <p class="about-card-description-remove">We constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
-                        <p class="about-card-description-remove"></p>
 					</div>
                     <div class="image-container">
                         <img id="me-pic" src="images/Me-500x500.png" alt="Me">
                     </div>
                     <div class="about-card-alt">
-                        <p class="about-card-description-alt"></p>
+                        <p class="about-card-description-alt">We constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
                     </div>
 				</div>
             </section>
             <section id="skills-section">
                 <h3 class="section-title">Personal Traits</h3>
-                <p>I'm friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I revel in finding solutions to them. It's a firm belief of mine that it's necessary to take full responsibility of a task and own it completely. </p>
+                <p>I'm a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding solutions to them.</p>
                 <ul id="skills-overview">
                     <li><div class="skill-card">
                         <h4>Enthusiastic learner</h4>
@@ -70,9 +68,9 @@
             <section id="uni-section">
                 <h3 class="section-title">University</h3>
                 <div id="uni-summary">
-                    <p>During the first lockdown, I took a decisive step towards my dream career in software development by enrolling with the Open University degree program while balancing full-time work.                    </p>
-                    <p>Since then, I've maintained an excellent grade by using excellent time-management, fuelled by a deep desire to exceed at my commitments. If my current trajectory is maintained, <b>I will graduate comfortably with a First Class Honours (1:1).</b></p>
-                    <p>Throughout my time at the Open University, I have learned about software development, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and the list goes on(!), but <b>object-oriented programming has intereseted me the most by far.</b></p>
+                    <p>During the first lockdown, I took a decisive step towards my dream career in software development by enrolling with the Open University degree program while balancing full-time work. Since then, I've maintained an excellent grade by using excellent time-management, fuelled by a deep desire to exceed at my commitments. </p>
+                    <p>If my current trajectory is maintained, <b>I will graduate comfortably with a First Class Honours (1:1).</b></p>
+                    <p>Throughout my time at the Open University, I have learned about software development, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and the list goes on(!), but <b>object-oriented programming has interested me most.</b></p>
                 </div>
                 <?php include('components/uni-slider.php');?>
             </section>

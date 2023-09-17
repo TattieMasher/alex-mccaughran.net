@@ -57,7 +57,7 @@
 .slides {
     width: 100%; /* Take up full available width */
     overflow: hidden;
-    max-height: 500px; /* TODO: Choose a good size, maybe responsive 100vh? */
+    max-height: 450px; /* TODO: Choose a good size, maybe responsive 100vh? */
     scrollbar-width: none;
 }
 
@@ -76,6 +76,10 @@
     gap: 5px;
 }
 
+.inner_content {
+    margin: auto 0 auto 0;
+}
+
 .slide-inner-grid h4 {
     margin-top: auto;
     margin-bottom: auto;
@@ -92,4 +96,73 @@
     border-radius: 25%;
     width: 64px;
     height: 64px;
+}
+
+/* Large Phones */
+@media (min-width: 554px) and (max-width: 890px) {
+}
+
+/* */
+@media (max-width: 745px) {  
+}
+
+/* Alt slider */
+@media (max-width: 745px) {    
+    .slider {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .slider-description {
+        text-align: center;
+    }
+
+    .slides {
+        max-height: 350px;
+        padding-top: 0;
+    }   
+
+    .inner_content {
+        margin: auto 0 auto 0;
+    }
+
+    .slider-button {
+        left: 50%;
+    }
+
+    #prev-slide-button {
+        top: 285px;
+    }
+    
+    #next-slide-button {
+        bottom: 5px;
+    }
+
+    #download-uni-grades-button {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        background-color: white;
+        border-radius: 25%;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 554px) {
+    #download-uni-grades-button {
+        top: 178px;
+    }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 890px) and (max-width: 970px) {    
+    .slider {
+        width: 100%;
+    }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 970px) {
 }

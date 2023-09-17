@@ -148,7 +148,6 @@ ul {
 	width: 80%;
 }
 
-/* TODO: Sort this, currently just a workaround to make "I'm Alex" better on screens <295px wide*/
 @media (max-width: 295px) {
 }
 

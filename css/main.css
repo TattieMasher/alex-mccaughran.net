@@ -34,6 +34,9 @@ main {
 
 /* Small Phones */
 @media (min-width: 351px) and (max-width: 554px) {
+	body {
+		font-size: 18px;
+	}
 }
 
 /* Large Phones */
