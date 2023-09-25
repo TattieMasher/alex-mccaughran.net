@@ -14,7 +14,7 @@
                 $isActive = true;
             }
 
-            // Set class to current element dependng on whether or not current it is the one visited
+            // Set class to the current element depending on whether or not the current page is the one visited
             $class = ($isActive) ? 'active-link' : 'inactive-link';
             if ($count == 0) {
                 echo '<li><a class="navbar-link ' . $class . '" href="/">' . $pageName . '</a></li>';

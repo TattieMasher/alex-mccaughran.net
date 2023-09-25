@@ -20,7 +20,7 @@
         ?>
         <main>
             <section id="projects-section">
-                <a class="project-link" href="projects/main-template.php"><div class="project-card">
+                <a class="project-link" href="project-pages/password-manager.php"><div class="project-card">
                     <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
                     <div class="project-text">
                         <h5 class="project-header">Android Password Manager</h5>
@@ -31,7 +31,7 @@
                 </div></a>
 
                 <div class="project-card">
-                    <a class="project-link" href="projects/main-template.php"><img class="project-pic" src="images/projects/thumbs/ShortenerThumb.png">
+                    <a class="project-link" href="project-pages/shady-link-generator.php"><img class="project-pic" src="images/projects/thumbs/ShortenerThumb.png">
                     <div class="project-text">
                         <h5 class="project-header">Shady URL Generator</h5>
                         <p class="project-desc">
@@ -45,7 +45,7 @@
                     <div class="project-text">
                         <h5 class="project-header">Compound Interest Android App</h5>
                         <p class="project-desc">
-                            Lorem ipsum. This is an app which does something lol, what more description do you need?
+                            Android app to calculate compound interest over set periods of time.
                         </p>
                     </div>
                 </div>

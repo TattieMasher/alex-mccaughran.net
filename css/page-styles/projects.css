@@ -55,3 +55,27 @@
     text-align: center;
     margin: auto;
 }
+
+/* Styles for individual project pages */
+
+.project-page-header {
+    display: grid;
+    grid-template-columns: 2fr 0.1fr;
+}
+
+.project-github {
+    border-radius: 20%;
+    height: 48px;
+    width: 48px;
+    margin-left: 10px;
+}
+
+.project-header-links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-section-template {
+    
+}

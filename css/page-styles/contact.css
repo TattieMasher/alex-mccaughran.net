@@ -1,0 +1,31 @@
+#contact-form-container {
+    
+}
+
+#contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-row {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+/* Ensure form elements occupy full width */
+.contact-row input,
+.contact-row textarea,
+.contact-row select,
+#contact-form button  {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border don't add to the width */
+    font-family: inherit;
+    font: inherit;
+}
+
+.contact-row textarea {
+    min-height: 120px;
+}
+
+.contact-row label {
+    justify-self: center;
+}

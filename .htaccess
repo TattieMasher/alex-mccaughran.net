@@ -1,11 +1,6 @@
 RewriteEngine On
 
-# Remove file extensions from URLs for HTML files
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ $1.html [L]
-
 # Remove file extensions from URLs for PHP files
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ $1.php [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

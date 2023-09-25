@@ -8,7 +8,18 @@ window.onload = function() {
     }, 4000);
 
 	flickerCursor();
+
+	document.body.style.overflow = 'hidden';
+
+	// Enable scrolling after 6 seconds (6000 milliseconds)
+	setTimeout(enableScrolling, 6000);
 };
+
+// Function to enable scrolling after 6 seconds
+function enableScrolling() {
+	document.body.style.overflow = 'auto';
+}
+
 
 const stringsArray = ["develop interesting code", "play guitar", "listen to podcasts" ,"learn new skills",
 	 "go bouldering", "get lost in a good story","travel to new places", "do jiu jitsu", 
@@ -76,3 +87,4 @@ function flickerCursor() {
 		}, 750);
 	}
 }
+

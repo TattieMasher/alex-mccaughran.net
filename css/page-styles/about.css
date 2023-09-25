@@ -15,6 +15,31 @@
 	position: relative; 
 }
 
+#fade-in-about3 {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 2.5s;
+	position: relative; 
+}
+
+.fade-in-about3 {
+	opacity: 0;
+	animation: fadeInAnimation 1s ease-in-out forwards;
+	animation-delay: 4s;
+	position: relative; 
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .image-container {
     position: relative;
 }

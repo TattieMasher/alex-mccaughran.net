@@ -6,7 +6,10 @@
 @import url("page-styles/about.css");
 @import url("ubuntu-terminal.css");
 @import url("slider.css");
+
 @import url("page-styles/projects.css");
+
+@import url("page-styles/contact.css");
 
 /* Shared styles */
 body {
@@ -30,6 +33,9 @@ main {
 
 /* Tiny screens */
 @media (max-width: 350px) {
+	body {
+		font-size: 16px;
+	}
 }
 
 /* Small Phones */

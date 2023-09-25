@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes/themes/prism-material-dark.css"> <!-- Syntax highlighting -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.0"></script>
         <link rel="stylesheet" href="../css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="../js/scripts.js"></script>
         <script type="text/javascript" src="../js/about-scripts.js"></script>
@@ -19,10 +21,28 @@
         include('../components/navbar.php');   // Incldue dynamic navbar
         ?>
         <main>
-            <section id="project header">
-                <h1></h1>
+            <section class="project-page-header">
+                <div>
+                    <h1>Android Password Manager</h1>
+                    <h4>This app can generate passwords, with user-defined complexity, and securely save them to be retreived at a later date.</h4>
+                </div>
+                <div class="project-header-links">
+                    <a href="https://github.com/TattieMasher/Android-Password-Manager"><img class="project-github" src="/images/github-sign.png"></a>
+                </div>
+            </section>
+            <section class="project-section">
+                <p>Full description, with code-showcases, coming soon!</p>
             </section>
         </main>
+
+        <div style="margin-top: 55px;">
         <?php include('../components/footer.php');?>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Prism.highlightAll();
+            });
+        </script>
     </body>
 </html>

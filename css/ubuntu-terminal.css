@@ -88,11 +88,18 @@
 
 
 /* Tiny screens */
-@media (max-width: 350px) {
+@media (max-width: 332px) {
+    .terminal {
+        width: 100%;
+        font-size: 14px;
+    }
 }
 
 /* Small Phones */
-@media (min-width: 351px) and (max-width: 554px) {
+@media (min-width: 333px) and (max-width: 554px) {
+    .terminal {
+        width: 100%;
+    }
 }
 
 /* Large Phones */
