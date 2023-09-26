@@ -9,11 +9,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes/themes/prism-material-dark.css"> <!-- Syntax highlighting -->
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.0"></script>
+        <link rel="stylesheet" href="../css/prism.css"> <!-- Syntax highlighting -->
         <link rel="stylesheet" href="../css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="../js/scripts.js"></script>
-        <script type="text/javascript" src="../js/about-scripts.js"></script>
+        <script type="text/javascript" src="../js/project-page-scripts.js"></script>
         <title>Alex McCaughran</title>
     </head>
     <body>
@@ -32,17 +31,17 @@
             </section>
             <section class="project-section">
                 <p>Full description, with code-showcases, coming soon!</p>
+                <pre><code class="language-java">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+    </code></pre>
             </section>
         </main>
 
-        <div style="margin-top: 55px;">
         <?php include('../components/footer.php');?>
-        </div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                Prism.highlightAll();
-            });
-        </script>
+        <script src="../js/prism.js"></script>
     </body>
 </html>
