@@ -13,7 +13,6 @@
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.0"></script>
         <link rel="stylesheet" href="../css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="../js/scripts.js"></script>
-        <script type="text/javascript" src="../js/about-scripts.js"></script>
         <title>Alex McCaughran</title>
     </head>
     <body>

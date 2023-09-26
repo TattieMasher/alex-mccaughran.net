@@ -17,6 +17,7 @@ window.onload = function() {
 
 // Function to enable scrolling after 6 seconds
 function enableScrolling() {
+	console.log("Starting scrolling")
 	document.body.style.overflow = 'auto';
 }
 

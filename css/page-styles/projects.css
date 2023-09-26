@@ -20,10 +20,12 @@
     margin: 5px;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s ease; /* Add transition for mouse-over */
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover {
+    transform: scale(1.01);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Change shadow on hover */;
 }
 
@@ -58,6 +60,10 @@
 
 /* Styles for individual project pages */
 
+.project-section {
+    font-size: 18px;
+}
+
 .project-page-header {
     display: grid;
     grid-template-columns: 2fr 0.1fr;
@@ -76,6 +82,17 @@
     flex-direction: row;
 }
 
-.project-section-template {
-    
+.code-block {
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+}
+
+.code-block p {
+    margin-left: 5px;
+}
+
+@media (max-width: 630px) {
+    .project-card {
+        width: 400px;
+    }
 }
