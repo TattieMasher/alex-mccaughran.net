@@ -21,7 +21,7 @@ body {
 }
 
 main {
-	min-height: calc(100vh - 143px - 64px);
+	min-height: calc(100vh - 90px - 64px);
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
