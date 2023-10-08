@@ -62,10 +62,10 @@
                 <h4><br>2018</h4>
             </div>
         </div>
-        <div class="event" data-start-date="2023-02-15" data-end-date="2023-03-15">
+        <div class="event" data-start-date="2020-10-01" data-end-date="2024-06-01">
 			<div class="icon">
 				<div class="tooltip">
-					<div class="left">
+					<div class="central">
 						<div class="tooltip-header">
 							<h3>Computing & IT (Software)</h3>
 							<h4>Open University</h4>

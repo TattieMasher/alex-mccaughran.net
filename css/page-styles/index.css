@@ -1,6 +1,6 @@
 #fade-in-hi {
 	opacity: 0;
-	animation: fadeInAnimation 1s ease-in-out forwards; /* Adjust duration as needed */
+	animation: fadeInAnimation 1s ease-in-out forwards;
 	animation-delay: 0.2s;
 	top: -10px;
 }

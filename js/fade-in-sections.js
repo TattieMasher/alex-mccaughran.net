@@ -6,7 +6,7 @@ const skills = document.getElementsByClassName('skill-card');
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.33, // Adjust this value as needed
+    threshold: 0.33,
 };
 
 const observer = new IntersectionObserver(entries => {

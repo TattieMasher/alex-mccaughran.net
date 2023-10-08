@@ -62,10 +62,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
-.icon:hover {
-  
+.icon:hover::after {
+  box-shadow: 0 0 0 5px orange;
 }
 
 .icon .left,
@@ -84,7 +85,7 @@
 .icon .left {
   min-width:300px;
   max-width:400px;
-  max-height: 315px;
+  max-height: 375px;
   overflow-y: auto;
   top: 50%;
   right: 100%;
@@ -166,7 +167,7 @@
 .icon .right {
   min-width: 300px;
   max-width: 400px;
-  max-height: 315px;
+  max-height: 375px;
   overflow-y: auto;
   top: 50%;
   left: 100%;
@@ -223,6 +224,68 @@
 }
 
 .icon .right i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #444444;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Central tooltip styles */
+
+.icon .central {
+  min-width: 300px;
+  max-width: 400px;
+  max-height: 375px;
+  overflow-y: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  color: #EEEEEE;
+  background-color: #444444;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 1);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+  z-index: 5;
+}
+
+.show-tooltip .central {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon .central .tooltip-header {
+  margin: 0px 20px;
+}
+
+.icon .central .text-content {
+  padding: 0px 20px 10px 20px;
+}
+
+.icon .central i {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.icon .central i::after {
   content: '';
   position: absolute;
   width: 12px;

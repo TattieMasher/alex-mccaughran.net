@@ -102,6 +102,14 @@ function tooltipExpander() {
 		// Get child tooltip within clicked event and toggle the show class on it
 		const tooltip = event.querySelector(".tooltip");
 		tooltip.classList.toggle("show-tooltip");
+
+		// Reset the scroll position of all tooltip content to the top
+		if (tooltip.classList.contains("show-tooltip")) {
+			const tooltipContents = tooltip.querySelectorAll(".left, .right, .central");
+			tooltipContents.forEach(function (tooltipContent) {
+				tooltipContent.scrollTop = 0; // Reset scroll position to the top
+			});
+		}
 	  });
 	});
 }
@@ -111,17 +119,34 @@ function closeTooltipsOnClick() {
 	document.addEventListener("click", function (event) {
 	  const tooltips = Array.from(document.querySelectorAll(".tooltip"));
 	  const events = Array.from(document.querySelectorAll(".event"));
-
+  
 	  // Check if the click occurred outside of tooltips and events
 	  if (
 		!tooltips.some((tooltip) => tooltip.contains(event.target)) &&
 		!events.some((eventElement) => eventElement.contains(event.target))
 	  ) {
-		console.log("Closing tooltips");
 		// Remove the "show-tooltip" class from all tooltips
 		tooltips.forEach((tooltip) => {
 		  tooltip.classList.remove("show-tooltip");
 		});
+	  } else {
+		// Clicked on an event, so close all tooltips first
+		tooltips.forEach((tooltip) => {
+		  tooltip.classList.remove("show-tooltip");
+		});
+  
+		// Find the clicked event
+		const clickedEvent = events.find((eventElement) =>
+		  eventElement.contains(event.target)
+		);
+  
+		// Find the tooltip associated with the clicked event and open it
+		if (clickedEvent) {
+		  const tooltip = clickedEvent.querySelector(".tooltip");
+		  if (tooltip) {
+			tooltip.classList.add("show-tooltip");
+		  }
+		}
 	  }
 	});
-}
+}  

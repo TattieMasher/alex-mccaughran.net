@@ -77,7 +77,7 @@
             </section>
             <section id="about-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">So . . .</h3>
-                <p>I hope that now- with my developing skills and my eagerness to learn more– that I will make a good candidate to be considered for a Junior Developer position, with room to grow into my full potential.</p>
+                <p>I hope that now– with my developing skills and my eagerness to learn more– that I will make a good candidate to be considered for a Junior Developer position, with room to grow into my full potential.</p>
 
                 <h3 class="section-title">The sky's the limit!</h3>
             </section>
