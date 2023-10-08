@@ -23,7 +23,7 @@
             <section id="about-section" class="fade-in-section">
 				<h1 id="fade-in-about1" class="section-title">Hi,<span id="fade-in-about2"> nice to meet you!</span></h1>
                 <?php include('components/terminal.php'); ?>
-                <p class="fade-in-about3">I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software) student</a>, studying whilst working full-time as a Techinical Analyst for Celtic FC. I'm now looking to pursue opportunities in my dream sector- software development.</p>
+                <p class="fade-in-about3">I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software) student</a>, studying whilst working full-time as a Techinical Analyst for Celtic FC. I'm now looking to pursue opportunities in my dream sector– software development.</p>
                 <div id="about-overview">
 					<div class="about-card">
                         <p class="about-card-description fade-in-about3">My primary concern in my current role is to provide valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
@@ -37,6 +37,7 @@
                         <p class="about-card-description-alt fade-in-about3">I constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
                     </div>
 				</div>
+				<?php include('components/timeline.php'); ?>
             </section>
             <section id="skills-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">Personal Traits</h3>

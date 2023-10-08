@@ -1,6 +1,6 @@
 window.onload = function() {
-	navExpander();
-	navScrollResize();
+	// Force scroll to top of page load, for best viewing
+	window.scrollTo(0,0);
 	
 	// Delay the execution of typeAndDeleteStrings(stringsArray) by 4.5 seconds, to allow for other animations to occur first
     setTimeout(function() {
@@ -8,6 +8,10 @@ window.onload = function() {
     }, 4000);
 
 	flickerCursor();
+
+	// Work history tooltip functionalities
+	tooltipExpander();
+	closeTooltipsOnClick();
 
 	document.body.style.overflow = 'hidden';
 
@@ -89,3 +93,35 @@ function flickerCursor() {
 	}
 }
 
+// Function to show tooltips when event divs are clicked
+function tooltipExpander() {
+	const events = document.querySelectorAll(".event");
+  
+	events.forEach(function (event) {
+	  event.addEventListener("click", function () {
+		// Get child tooltip within clicked event and toggle the show class on it
+		const tooltip = event.querySelector(".tooltip");
+		tooltip.classList.toggle("show-tooltip");
+	  });
+	});
+}
+
+// Function to close tooltips when clicking anywhere outside
+function closeTooltipsOnClick() {
+	document.addEventListener("click", function (event) {
+	  const tooltips = Array.from(document.querySelectorAll(".tooltip"));
+	  const events = Array.from(document.querySelectorAll(".event"));
+
+	  // Check if the click occurred outside of tooltips and events
+	  if (
+		!tooltips.some((tooltip) => tooltip.contains(event.target)) &&
+		!events.some((eventElement) => eventElement.contains(event.target))
+	  ) {
+		console.log("Closing tooltips");
+		// Remove the "show-tooltip" class from all tooltips
+		tooltips.forEach((tooltip) => {
+		  tooltip.classList.remove("show-tooltip");
+		});
+	  }
+	});
+}

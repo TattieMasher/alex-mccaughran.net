@@ -1,33 +1,46 @@
+.timeline-container {
+  margin-top: 20px;
+  position: relative;
+}
+
 .timeline {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #f0f0f0;
   padding: 20px;
-  margin-top: 200px;
-  height: 175px; /* Added to contain date labels */
+  height: 225px; /* Added to contain date labels */
+}
+
+.timeline-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 #timeline-line {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 90px);
+  width: calc(100% - 60px);
   height: 10px;
   background-color: #007bff;
-  z-index: 1;
 }
 
 .event {
   position: relative;
   cursor: pointer;
   transition: opacity 0.2s;
-  z-index: 5000;
 }
 
 .event-date {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(80% + 10px);
   left: 50%;
   transform: translateX(-50%);
   color: #007bff;
@@ -51,64 +64,28 @@
   position: relative;
 }
 
+.icon:hover {
+  
+}
+
+.icon .left,
+.icon .right {
+  z-index: 1000;
+}
+
 .icon h3 {margin:12px 0;}
 
-.icon .right {
-  min-width:300px;
-  max-width:400px;
-  top:50%;
-  left:100%;
-  margin-left:20px;
-  transform:translate(0, -50%);
-  padding:0;
-  color:#EEEEEE;
-  background-color:#444444;
-  font-weight:normal;
-  font-size:13px;
-  border-radius:8px;
-  position:absolute;
-  z-index:99999999;
-  box-sizing:border-box;
-  box-shadow:0 1px 8px rgba(0,0,0,0.5);
-  visibility:hidden; opacity:0; transition:opacity 0.8s;
-}
 
-.icon:hover .right {
-  visibility:visible; opacity:1;
-}
 
-.icon .right img {
-  width:400px;
-  border-radius:8px 8px 0 0;
-}
-
-.icon .right i {
-  position:absolute;
-  top:50%;
-  right:100%;
-  margin-top:-12px;
-  width:12px;
-  height:24px;
-  overflow:hidden;
-}
-.icon .right i::after {
-  content:'';
-  position:absolute;
-  width:12px;
-  height:12px;
-  left:0;
-  top:50%;
-  transform:translate(50%,-50%) rotate(-45deg);
-  background-color:#444444;
-  box-shadow:0 1px 8px rgba(0,0,0,0.5);
-}
 
 /* Left tooltip styles */
 /* TODO: Combine common styling */
 
 .icon .left {
-  min-width: 200px;
-  max-width: 400px;
+  min-width:300px;
+  max-width:400px;
+  max-height: 315px;
+  overflow-y: auto;
   top: 50%;
   right: 100%;
   margin-right: 20px;
@@ -120,15 +97,14 @@
   font-size: 13px;
   border-radius: 8px;
   position: absolute;
-  z-index: 99999999;
   box-sizing: border-box;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 1);
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.8s;
 }
 
-.icon:hover .left {
+.show-tooltip .left {
   visibility: visible;
   opacity: 1;
 }
@@ -143,10 +119,13 @@
 }
 
 .tooltip {
+  z-index: 999999;
   width: fit-content;
 }
 
 .tooltip ul {
+  list-style-type: disc; 
+  list-style-position: inside; 
   margin: 0;
 }
 
@@ -169,6 +148,81 @@
 }
 
 .icon .left i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #444444;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Right styles */
+
+.icon .right {
+  min-width: 300px;
+  max-width: 400px;
+  max-height: 315px;
+  overflow-y: auto;
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  transform: translate(0, -50%);
+  padding: 0;
+  color: #EEEEEE;
+  background-color: #444444;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 1);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+  z-index: 5;
+}
+
+.show-tooltip .right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon .right img {
+  width: 400px;
+  border-radius: 8px 8px 0 0;
+}
+
+.icon .tooltip-header {
+  margin: 0px 20px;
+}
+
+.tooltip {
+  z-index: 999999;
+  width: fit-content;
+}
+
+.tooltip ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0;
+}
+
+.icon .right i {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.icon .right i::after {
   content: '';
   position: absolute;
   width: 12px;
