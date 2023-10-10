@@ -101,14 +101,29 @@
     margin: auto 5px;
 }
 
-@media (max-width: 1292px) {
-    .code-block {
-        font-size: 16px;
-    }
+.code-wrap {
+    overflow-wrap: break-word;
 }
+
 
 @media (max-width: 630px) {
     .project-card {
         width: 400px;
+    }
+}
+
+@media (max-width: 830px) {
+	.code-block,
+	.code-block-right {
+        display: block;
+        margin-top: 50px;
+        border: 0.5px solid #f2f3f2;
+        padding: 10px;
+	}	
+}
+
+@media (max-width: 1292px) {
+    .code-block {
+        font-size: 16px;
     }
 }

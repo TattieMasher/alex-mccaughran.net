@@ -17,7 +17,7 @@
         <?php include('config.php');        // Include config data
         include('components/navbar.php');   // Incldue dynamic navbar
         ?>
-        <main>
+        <main class="project-wrapper">
             <section id="projects-section">
                 <div class="project-card">
                     <a class="project-link" href="project-pages/password-manager.php">

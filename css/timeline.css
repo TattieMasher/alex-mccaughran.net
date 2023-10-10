@@ -105,7 +105,11 @@
   transition: opacity 0.8s;
 }
 
-.show-tooltip .left {
+.show-tooltip .left,
+.show-tooltip .right,
+.show-tooltip .central  {
+  min-width:300px;
+  max-width:400px;
   visibility: visible;
   opacity: 1;
 }
@@ -295,4 +299,15 @@
   transform: translate(-50%, -50%) rotate(-45deg);
   background-color: #444444;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 500px) {    
+	.icon .left,
+	.icon .right,
+	.icon .central {
+		min-width:225px;
+		max-width:400px;
+	}
 }
