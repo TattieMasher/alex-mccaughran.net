@@ -11,13 +11,12 @@
     width: 100%;
 }
 
-/* Ensure form elements occupy full width */
 .contact-row input,
 .contact-row textarea,
 .contact-row select,
 #contact-form button  {
     width: 100%;
-    box-sizing: border-box; /* Ensure padding and border don't add to the width */
+    box-sizing: border-box;
     font-family: inherit;
     font: inherit;
 }
