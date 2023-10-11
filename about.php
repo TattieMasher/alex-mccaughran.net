@@ -37,7 +37,9 @@
                         <p class="about-card-description-alt fade-in-about3">I constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
                     </div>
 				</div>
-				<?php include('components/timeline.php'); ?>
+            </section>
+            <section id="work-section" class="fade-in-section fade-in-about3">
+                <?php include('components/timeline.php'); ?>
             </section>
             <section id="skills-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">Personal Traits</h3>

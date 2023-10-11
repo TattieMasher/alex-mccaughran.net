@@ -18,9 +18,11 @@
   transform: translateX(-50%);
   font-size: 18px;
   font-weight: bold;
-  background-color: #f0f0f0;
+  margin-left: auto;
   padding: 10px;
   border-radius: 4px;
+  width: 100%;
+  text-align: center;
 }
 
 #timeline-line {
@@ -83,14 +85,12 @@
 /* TODO: Combine common styling */
 
 .icon .left {
-  min-width:300px;
-  max-width:400px;
   max-height: 375px;
   overflow-y: auto;
   top: 50%;
   right: 100%;
   margin-right: 20px;
-  transform: translate(0, -50%);
+  transform: translate(0, -70%);
   padding: 0;
   color: #EEEEEE;
   background-color: #444444;
@@ -169,14 +169,12 @@
 /* Right styles */
 
 .icon .right {
-  min-width: 300px;
-  max-width: 400px;
   max-height: 375px;
   overflow-y: auto;
   top: 50%;
   left: 100%;
   margin-left: 20px;
-  transform: translate(0, -50%);
+  transform: translate(0, -70%);
   padding: 0;
   color: #EEEEEE;
   background-color: #444444;
@@ -244,13 +242,11 @@
 /* Central tooltip styles */
 
 .icon .central {
-  min-width: 300px;
-  max-width: 400px;
   max-height: 375px;
   overflow-y: auto;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   padding: 0;
   color: #EEEEEE;
   background-color: #444444;
@@ -301,13 +297,43 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 350px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 
+  #timeline-line {
+    height: 8px;
+  }
+
+  .timeline-title {
+    font-size: 16px;
+  }
+
+  .event-date {
+   font-size: 14px; 
+  }
+}
 
 @media (max-width: 500px) {    
-	.icon .left,
-	.icon .right,
-	.icon .central {
-		min-width:225px;
-		max-width:400px;
-	}
+  .show-tooltip .left,
+  .show-tooltip .right,
+  .show-tooltip .central {
+    min-width:225px;
+    max-width:400px;
+  }
+
+  .tooltip li {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 385px) {
+  .icon .left,
+  .icon .right,
+  .icon .central {
+    min-width: 55vw;
+    max-width: 55vw;
+  }
 }

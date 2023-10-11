@@ -152,11 +152,21 @@
 /* Small Phones */
 @media (max-width: 554px) {
     #download-uni-grades-button {
+        width: 42px;
+        height: 42px;
         top: 178px;
     }
 	
     #prev-slide-button {
         top: 262px;
+    }
+
+    .slide-title {
+        font-size: 22px;
+    }
+
+    .slide-inner-grid {
+        font-size: 16px;
     }
 }
 

@@ -69,6 +69,15 @@ main {
 	}
 }
 
+@keyframes fadeOutAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 /* TODO: Reverse this as well */
 @keyframes underlineAnimation {
 	from {

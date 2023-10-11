@@ -5,8 +5,8 @@ const skills = document.getElementsByClassName('skill-card');
 // Intersection Observer options
 const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.33,
+    rootMargin: '-100px 0px 0px 0px',
+    threshold: 0.0,
 };
 
 const observer = new IntersectionObserver(entries => {

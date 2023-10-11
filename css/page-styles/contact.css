@@ -28,3 +28,8 @@
 .contact-row label {
     justify-self: center;
 }
+
+.remove-form {
+    animation: 1s fadeOutAnimation ease-in-out;
+    /*  duration timing-function delay iteration-count direction fill-mode; */
+}

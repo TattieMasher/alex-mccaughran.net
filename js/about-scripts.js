@@ -17,6 +17,10 @@ window.onload = function() {
 
 	// Enable scrolling after 6 seconds (6000 milliseconds)
 	setTimeout(enableScrolling, 6000);
+
+	// Code from scripts.js
+	navExpander();
+	navScrollResize();
 };
 
 // Function to enable scrolling after 6 seconds
@@ -95,24 +99,50 @@ function flickerCursor() {
 
 // Function to show tooltips when event divs are clicked
 function tooltipExpander() {
+	console.log("Tooltip expander function called."); // Add this line for debugging
+  
 	const events = document.querySelectorAll(".event");
   
 	events.forEach(function (event) {
 	  event.addEventListener("click", function () {
+		console.log("Event clicked."); // Add this line for debugging
+  
 		// Get child tooltip within clicked event and toggle the show class on it
 		const tooltip = event.querySelector(".tooltip");
 		tooltip.classList.toggle("show-tooltip");
-
+  
 		// Reset the scroll position of all tooltip content to the top
 		if (tooltip.classList.contains("show-tooltip")) {
-			const tooltipContents = tooltip.querySelectorAll(".left, .right, .central");
-			tooltipContents.forEach(function (tooltipContent) {
-				tooltipContent.scrollTop = 0; // Reset scroll position to the top
-			});
+		  console.log("Tooltip is shown."); // Debugging
+  
+		  const tooltipContents = tooltip.querySelectorAll(".left, .right, .central");
+		  tooltipContents.forEach(function (tooltipContent) {
+			tooltipContent.scrollTop = 0; // Reset scroll position to the top
+		  });
+  
+		  // Calculate the position of the tooltip and its width
+		  const tooltipRect = tooltip.getBoundingClientRect();
+		  const tooltipWidth = tooltipRect.width;
+  
+		  // Calculate the distance from the right edge of the screen
+		  const distanceToRightEdge = window.innerWidth - tooltipRect.right;
+		  console.log("Distance to right edge:", distanceToRightEdge); // Debugging
+  
+			// Check if the tooltip is too close to the right edge
+			if (distanceToRightEdge < tooltipWidth) {
+				// Check if there is enough space on the left, otherwise reposition to the right
+				if (tooltipRect.left - tooltipWidth > 0) {
+				tooltip.style.left = (tooltipRect.left - tooltipWidth) + 'px';
+				} else {
+				// Reposition the tooltip to the right (default position)
+				tooltip.style.left = (tooltipRect.left + tooltipWidth) + 'px';
+				}
+			}
 		}
 	  });
 	});
 }
+
 
 // Function to close tooltips when clicking anywhere outside
 function closeTooltipsOnClick() {

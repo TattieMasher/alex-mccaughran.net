@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="timeline copy.css" />
 <div class="timeline-container">
     <div class="timeline-title">
         <h3>Work Timeline</h3>
