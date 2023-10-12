@@ -78,6 +78,7 @@
 							<ul>
 								<li>Self-motivation</li>
 								<li>Problem Solving</li>
+								<li>EssayAcademic Research and Essay Writing</li>
 								<li>ITIL Service Management</li>
 							</ul>
 							<h5>Technical Skills:</h5>
@@ -90,13 +91,15 @@
 									</ul>
 								</li>
 								<li>Agile Methodologies</li>
+						        <li>Web Development (HTML, CSS, JavaScript)</li>
+								<li>Deploying Services to Cloud Enviornments (OpenStack)</li>
+								<li>API Development and Integration</li>
+								<li>AI/ML Libraries (TensorFlow, NumPy)</li>
+								<li>Database Management (SQL, pSQL)</li>
+								<li>Containerisation (Docker)</li>
 								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
+								<li>IT Project Management and Leadership</li>
+								<li>Mathematical Reasoning and Problem Solving</li>
 							</ul>
 						</div>
 					</div>
@@ -117,17 +120,18 @@
 						<div class="text-content">
 							<p>
 								At Microtech, I delivered outstanding technical support to GP practices and corporate clients all across Scotland. I was also responsible for overseeing operations on NHS Sotland's EDT (Electronic Document Transport) Hubs, which carried any and all hospital and laboratory records to GPs.
-								This job involved a lot of troubleshooting between multiple different software systems, liasing with third-parties to achieve resolution of issues and strong prioritisation skills.
+								This job involved a lot of troubleshooting between multiple different software systems and liasing with third-parties to achieve resolution of issues. Strong prioritisation skills were necessary for success.
 							</p>
 							<h5>Soft Skills:</h5>
 							<ul>
 								<li>Technical Support</li>
 								<li>Problem Solving</li>
-								<li>Task Prioritisation</li>
+								<li>Task Prioritisation & Time Management</li>
 								<li>Third-party Collaboration</li>
 								<li>ITIL Best Practices</li>
 								<li>Compliance with Data Regulations</li>
-								<li>Content</li>
+								<li>Documentation/Knowledge Base Writing</li>
+								<li>Communication Skills</li>
 							</ul>
 							<h5>Technical Skills:</h5>
 							<ul>
@@ -135,15 +139,12 @@
 								<li>Windows Support</li>
 								<li>API Troubleshooting</li>
 								<li>MySQL Query Browser (Data Extraction and Analysis)</li>
-								<li>Application Security</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
-								<li>Content</li>
+								<li>Harware Troubleshooting</li>
+								<li>Windows Server Troubleshooting</li>
 							</ul>
+							    <p>
+                                    Additionally, I provided comprehensive IT support for Windows, Office 365 and various other software packages to Microtech's corporate clients.
+                                </p>
 						</div>
 					</div>
 				</div>
@@ -161,11 +162,29 @@
                             <h4>Celtic FC</h4>
                         </div>
                         <div class="text-content">
+                            <h5>Soft Skills:</h5>
                             <ul>
-                                <li>Test content</li>
-                                <li>Test</li>
-                                <li>Content</li>
+                                <li>Stakeholder Communication Skills</li>
+                                <li>Problem Solving</li>
+                                <li>Team Collaboration</li>
+                                <li>Adaptability</li>
+                                <li>Task Prioritisation & Time Management</li>
+                                <li>Attention to Detail</li>
+                                <li>ITIL Best Practices</li>
+                                <li>Project Execution</li>
                             </ul>
+                            <h5>Technical Skills:</h5>
+							<ul>
+								<li>Advanced SQL Querying</li>
+								<li>Tableau Dashboard Creation</li>
+								<li>Data Analysis & Reporting</li>
+								<li>First-Line IT Support</li>
+								<li>Troubleshooting and Issue Resolution</li>
+								<li>Access Control System Supervision</li>
+								<li>MS Excel Power User</li>
+								<li>Data Analysis</li>
+								<li>Super User of TicketMaster Sport XR</li>
+							</ul>
                         </div>
                     </div>
                 </div>

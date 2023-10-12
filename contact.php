@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/contact-form.js"></script>
         <title>Alex McCaughran</title>
     </head>
     <body>
@@ -66,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <option value="Other">Other</option>
                             </select>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" onclick="">Submit</button>
                     </form>
                 </div>
             </section>

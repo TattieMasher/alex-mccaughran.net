@@ -5,7 +5,7 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    box-shadow: 0 0 0 20px #757a79; /* Create a shadow effect to fill the border */
+    box-shadow: 0 0 0 20px #757a79;
 	/* https://stackoverflow.com/questions/36787529/how-to-fix-blurry-image-on-transform-scale */
     -webkit-backface-visibility: hidden; 
     -ms-transform: translateZ(0); /* IE 9 */
@@ -25,12 +25,12 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spread the elements horizontally */
+    justify-content: space-between;
 	z-index: 1000;
 }
 
 .navbar-links {
-	position: sticky;
+	/* position: sticky; Removed due to links staying at bottom of navbar once resized. */
     margin: 0;
     gap: 20px; /* Add spacing between links */
     display: flex;

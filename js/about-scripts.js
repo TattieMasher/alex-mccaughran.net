@@ -113,7 +113,7 @@ function tooltipExpander() {
   
 		// Reset the scroll position of all tooltip content to the top
 		if (tooltip.classList.contains("show-tooltip")) {
-		  console.log("Tooltip is shown."); // Debugging
+		  console.log("Tooltip is shown."); // Add this line for debugging
   
 		  const tooltipContents = tooltip.querySelectorAll(".left, .right, .central");
 		  tooltipContents.forEach(function (tooltipContent) {
@@ -126,7 +126,7 @@ function tooltipExpander() {
   
 		  // Calculate the distance from the right edge of the screen
 		  const distanceToRightEdge = window.innerWidth - tooltipRect.right;
-		  console.log("Distance to right edge:", distanceToRightEdge); // Debugging
+		  console.log("Distance to right edge:", distanceToRightEdge); // Add this line for debugging
   
 			// Check if the tooltip is too close to the right edge
 			if (distanceToRightEdge < tooltipWidth) {

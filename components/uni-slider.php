@@ -28,7 +28,7 @@
                     </li>
                     <li>
                         <div class="slide-inner-grid">
-                            <h4><a class="about-link" href="https://www.open.ac.uk/courses/modules/mu129">MU123 - Discovering Mathematics</a></h4>
+                            <h4><a class="about-link" href="https://www.open.ac.uk/courses/modules/mu123">MU123 - Discovering Mathematics</a></h4>
                             <h4>91%</h4>
                         </div>
                     </li>
