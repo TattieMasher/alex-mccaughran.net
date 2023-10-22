@@ -67,8 +67,8 @@
   transition: box-shadow 0.3s ease;
 }
 
-.icon:hover::after {
-  box-shadow: 0 0 0 5px orange;
+.pulse {
+  animation: pulseAnimation 5s ease-in-out infinite;
 }
 
 .icon .left,
@@ -85,7 +85,7 @@
 /* TODO: Combine common styling */
 
 .icon .left {
-  max-height: 375px;
+  max-height: 400px;
   overflow-y: auto;
   top: 50%;
   right: 100%;
@@ -169,7 +169,7 @@
 /* Right styles */
 
 .icon .right {
-  max-height: 375px;
+  max-height: 400px;
   overflow-y: auto;
   top: 50%;
   left: 100%;
@@ -242,7 +242,7 @@
 /* Central tooltip styles */
 
 .icon .central {
-  max-height: 375px;
+  max-height: 400px;
   overflow-y: auto;
   top: 50%;
   left: 50%;
@@ -336,4 +336,19 @@
     min-width: 55vw;
     max-width: 55vw;
   }
+}
+
+@keyframes pulseAnimation {
+    0% {
+        background-color: #007bff;
+    }
+	50% {
+        background-color: #007bff;
+    }
+    75% {
+        background-color: orange;
+    }
+    100% {
+        background-color: #007bff;
+    }
 }
