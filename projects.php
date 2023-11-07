@@ -20,12 +20,12 @@
         <main class="project-wrapper">
             <section id="projects-section">
                 <div class="project-card">
-                    <a class="project-link" href="project-pages/password-manager.php">
-                        <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
+                    <a class="project-link" href="project-pages/shopping-list-generator.php">
+                        <img class="project-pic" src="images/projects/thumbs/ShoppingThumb.png">
                         <div class="project-text">
-                            <h5 class="project-header">Android Password Manager</h5>
+                            <h5 class="project-header">Shopping List Generator</h5>
                             <p class="project-desc">
-                                A simple android app which creates an SQLite table containing account details and can generate complex, secure passwords.
+                                A utility web-app to create an aggregated shopping list based on the meals provided to it.
                             </p>
                         </div>
                     </a>
@@ -38,6 +38,18 @@
                             <h5 class="project-header">Shady URL Generator</h5>
                             <p class="project-desc">
                                 A parody of sorts on the URL shortening services we've all seen and used.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a class="project-link" href="project-pages/password-manager.php">
+                        <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
+                        <div class="project-text">
+                            <h5 class="project-header">Android Password Manager</h5>
+                            <p class="project-desc">
+                                Simple android app to manage account details and can generate complex, secure passwords.
                             </p>
                         </div>
                     </a>

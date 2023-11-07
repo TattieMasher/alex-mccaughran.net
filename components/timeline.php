@@ -5,7 +5,7 @@
     <div class="timeline">
 		<div id="timeline-line"> </div>
         <div class="event" data-start-date="1998-09-04" data-end-date="2018-11-01">
-            <div class="icon">
+            <div class="icon pulse">
                 <div class="tooltip">
                     <div class="right">
                         <div class="tooltip-header">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="event" data-start-date="2018-11-01" data-end-date="2021-05-01">
-            <div class="icon">
+            <div class="icon pulse">
             <div class="tooltip">
                     <div class="right">
                         <div class="tooltip-header">
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="event" data-start-date="2020-10-01" data-end-date="2024-06-01">
-			<div class="icon">
+			<div class="icon uni pulse">
 				<div class="tooltip">
 					<div class="central">
 						<div class="tooltip-header">
@@ -78,7 +78,7 @@
 							<ul>
 								<li>Self-motivation</li>
 								<li>Problem Solving</li>
-								<li>EssayAcademic Research and Essay Writing</li>
+								<li>Academic Research and Essay Writing</li>
 								<li>ITIL Service Management</li>
 							</ul>
 							<h5>Technical Skills:</h5>
@@ -97,7 +97,6 @@
 								<li>AI/ML Libraries (TensorFlow, NumPy)</li>
 								<li>Database Management (SQL, pSQL)</li>
 								<li>Containerisation (Docker)</li>
-								<li>Content</li>
 								<li>IT Project Management and Leadership</li>
 								<li>Mathematical Reasoning and Problem Solving</li>
 							</ul>
@@ -110,7 +109,7 @@
             </div>
 		</div>
         <div class="event" data-start-date="2023-02-15" data-end-date="2023-03-15">
-			<div class="icon">
+			<div class="icon pulse">
 				<div class="tooltip">
 					<div class="left">
 						<div class="tooltip-header">
@@ -130,7 +129,7 @@
 								<li>Third-party Collaboration</li>
 								<li>ITIL Best Practices</li>
 								<li>Compliance with Data Regulations</li>
-								<li>Documentation/Knowledge Base Writing</li>
+								<li>Documentation & Knowledge Base Writing</li>
 								<li>Communication Skills</li>
 							</ul>
 							<h5>Technical Skills:</h5>
@@ -154,7 +153,7 @@
             </div>
         </div>
         <div class="event" data-start-date="2023-02-15" data-end-date="2023-03-15">
-            <div class="icon">
+            <div class="icon pulse">
             <div class="tooltip">
                     <div class="left">
                         <div class="tooltip-header">

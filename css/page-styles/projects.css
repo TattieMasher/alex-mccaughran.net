@@ -105,6 +105,41 @@
     overflow-wrap: break-word;
 }
 
+/*Shopping-list TODO: move to its own? */
+
+.tabs {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.tab {
+    margin: 0 20px;
+}
+
+.tab a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.tab a:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 
 @media (max-width: 630px) {
     .project-card {

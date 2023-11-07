@@ -123,7 +123,8 @@
     }   
 
     .inner_content {
-        margin: -20px 0 auto 0;
+        /* Removed, may put back in at some point, so not removing
+		margin: -20px 0 auto 0; */
     }
 
     .slider-button {
@@ -146,6 +147,13 @@
         border-radius: 25%;
         width: 64px;
         height: 64px;
+    }
+}
+
+/* Fix  */
+@media (max-width: 350px) {	
+    #prev-slide-button {
+        top: 233px;
     }
 }
 

@@ -22,15 +22,33 @@
         <main>
             <section class="project-page-header">
                 <div>
-                    <h1>Android Password Manager</h1>
-                    <h4>This app can generate passwords, with user-defined complexity, and securely save them to be retreived at a later date.</h4>
+                    <h1>Shopping List Generator</h1>
+                    <h4>Simplify the most difficult part of your weekly shop– the planning! Supply this application with the meals you wish to have, then allow it to tell you all that you need.</h4>
+                    <h4>Meal prep made easy.</h4>
                 </div>
                 <div class="project-header-links">
+                    <a href="https://shopping-list.alex-mccaughran.net/"><img class="project-github" src="/images/play-sign.png"></a>
                     <a href="https://github.com/TattieMasher/Android-Password-Manager"><img class="project-github" src="/images/github-sign.png"></a>
                 </div>
             </section>
             <section class="project-section">
-                <p>Full description coming soon!</p>
+                <p>
+                    This web-app streamlines the meal planning process by allowing users to input meals with their ingredients. It then compiles these meal details into an aggregated shopping list, where ingredient quantities are combined to give a comprehensive shopping list.
+                    <br><br>Built with a React front-end, the app interacts with a Spring Boot REST API hosted on a VPS, supplying real-time data management with a MySQL database. Users can plan meals, manage ingredients, and quantities, then generate a shopping list.
+                    <br><br>I created this app to simplify the (seemingly) monumental task of meal prepping.
+                </p>
+                <div class="shopping-list-swapper">
+                    <ul class="tabs">
+                        <li class="tab"><a href="#">Front-end</a></li>
+                        <li class="tab"><a href="#">Back-end</a></li>
+                    </ul>
+                    <div id="front-end-content" class="tab-content">
+                        <?php include('../components/shopping-frontend-content.php');?>
+                    </div>
+                    <div id="back-end-content" class="tab-content">
+                        <?php include('../components/shopping-backend-content.php');?>
+                    </div>
+                </div>
             </section>
         </main>
         <?php include('../components/footer.php');?>
