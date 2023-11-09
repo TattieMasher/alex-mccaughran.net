@@ -23,7 +23,7 @@
 				<h1 id="fade-in-hi" class="page-title">Hi!  <span id="fade-in-wave">👋</span><br><span id="fade-in-alex">I'm Alex<span id="fade-in-end">.</span></span></h1>
 				<p class="fade-in-index-content_1">I'm a 25 year old, self-studying University Student, working towards a BSc software-focussed degree with the Open University. I have a deep passion for all things scientific and IT-related.</p>
 				<p class="fade-in-index-content_2">I'm looking to break out into the software-development industry.</p>
-                <p class="fade-in-index-content_3"> I began building my website with the idea of showcasing some of my potential, store/deploy projects (and possibly blog their creation). Plus, I thought it would be fun to put something of my own out there!</p>
+                <p class="fade-in-index-content_3"> I began building my website with the idea of showcasing some of my potential, store/deploy projects, and share my enthusiasim for software development. Plus, I thought it would be fun to put something of my own out there!</p>
 				<p class="fade-in-index-content_4">I hope these spare-time efforts will add weight and credibility to my ability to write clean, functional code to do interesting things.</p>
 				<br><br>
             </section>

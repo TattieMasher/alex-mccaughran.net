@@ -161,6 +161,10 @@
                             <h4>Celtic FC</h4>
                         </div>
                         <div class="text-content">
+                            <p>
+								My job role at Celtic is rather varied, but I'm focussed primarily on delivering data to support high-level business decisions. I regularly interact with two complex databases and provide useful inisghts from them, communicated in an accessible and friendly manner through Tableau dashboards.
+                                I'm also reposnible for ensuring entry of all 50,000+ fans on a match day, through maintenance and troubleshooting our vast turnstile network. On top of these, I also perform gneeral IT on Windows machines for the 15-or-so strong customer service team in the Ticket Office.
+							</p>
                             <h5>Soft Skills:</h5>
                             <ul>
                                 <li>Stakeholder Communication Skills</li>

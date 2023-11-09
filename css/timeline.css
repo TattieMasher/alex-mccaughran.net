@@ -271,10 +271,6 @@
   margin: 0px 20px;
 }
 
-.icon .central .text-content {
-  padding: 0px 20px 10px 20px;
-}
-
 .icon .central i {
   position: absolute;
   top: 50%;
@@ -313,6 +309,10 @@
 
   .event-date {
    font-size: 14px; 
+  }
+
+  .text-content {
+    padding: 0px 10px 10px 10px;
   }
 }
 

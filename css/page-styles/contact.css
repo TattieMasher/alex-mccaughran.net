@@ -29,6 +29,10 @@
     justify-self: center;
 }
 
+#message {
+    resize: vertical;
+}
+
 .remove-form {
     animation: 1s fadeOutAnimation ease-in-out;
     /*  duration timing-function delay iteration-count direction fill-mode; */
