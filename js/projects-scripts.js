@@ -15,4 +15,8 @@ window.onload = function() {
 
     // Activate the first tab and content by default
     tabs[0].click();
+
+    // from scripts.js
+    navExpander();
+	navScrollResize();
 };

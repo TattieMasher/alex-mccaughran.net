@@ -44,10 +44,10 @@
                         <li class="tab"><a href="#back-end-content">Back-end</a></li>
                     </ul>
                     <div id="front-end-content" class="tab-content">
-                        <?php include('../components/shopping-frontend-content.php');?>
+                        <?php include('../components/shopping-backend-content.php');?> <!-- TODO: THESE HAVE BEEN SWAPPED -->
                     </div>
                     <div id="back-end-content" class="tab-content">
-                        <?php include('../components/shopping-backend-content.php');?>
+                        <?php include('../components/shopping-frontend-content.php');?>
                     </div>
                 </div>
             </section>

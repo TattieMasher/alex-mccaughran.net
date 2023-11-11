@@ -23,22 +23,33 @@
                 <div id="contact-form-container">
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $from = "enquiries@alex-mccaughran.net";
-                    $to = "hello@alex-mccaughran.net";
-                    $message = "Name: " . $_POST['name'] . "\n";
-                    $message .= "Email/Phone: " . $_POST['contact'] . "\n";
-                    $message .= "Purpose: " . $_POST['purpose'] . "\n";
-                    $message .= "Message:\n" . $_POST['message'];
-                    $headers = "From:" . $from;
-                    $subject = "Contact Form Submission - " . $_POST['purpose'];
+                    $captcha = $_POST['g-recaptcha-response'];
+                    $secretKey = "6LeKXwkpAAAAAH3NBbmZMlOnVngj7ZDqnMQ_LmWm";
+                    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+                    $responseKeys = json_decode($response,true);
+                    
+                    if($responseKeys["success"]) {
+                        // CAPTCHA was entered correctly, process the form
+                        $from = "enquiries@alex-mccaughran.net";
+                        $to = "hello@alex-mccaughran.net";
+                        $message = "Name: " . $_POST['name'] . "\n";
+                        $message .= "Email/Phone: " . $_POST['contact'] . "\n";
+                        $message .= "Purpose: " . $_POST['purpose'] . "\n";
+                        $message .= "Message:\n" . $_POST['message'];
+                        $headers = "From:" . $from;
+                        $subject = "Contact Form Submission - " . $_POST['purpose'];
 
-                    if (mail($to, $subject, $message, $headers)) {
-                        include('components/contact-success.php');
+                        if (mail($to, $subject, $message, $headers)) {
+                            include('components/contact-success.php'); // Email success
+                        } else {
+                            include('components/contact-failure.php'); // Email error
+                        }
                     } else {
-                        include('components/contact-failure.php');
+                        // Captcha error
+                        include('components/contact-failure.php'); // TODO: Do something specific for Captcha? Maybe 
                     }
                 } else {
-                    include('components/contact-form.php');
+                    include('components/contact-form.php'); // Show the form when no POST request
                 }
                 ?>
                 </div>

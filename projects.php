@@ -64,15 +64,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-pic"></div>
-                    <div class="project-text">
-                        <h5 class="project-header">Android app</h5>
-                        <p class="project-desc">
-                            Lorem ipsum. This is an app which does something lol, what more description do you need?
-                        </p>
-                    </div>
-                </div>
+                
             </section>
         </main>
         <?php include('components/footer.php');?>

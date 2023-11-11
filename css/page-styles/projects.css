@@ -136,13 +136,13 @@
 .tab-content {
     display: none;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: x 0.3s ease-in-out;
+    transform: translateX(-30px);
+    animation: codeMoveIn 0.5s ease forwards;
 }
 
 .tab-content.active {
     display: block;
 }
-
 
 @media (max-width: 630px) {
     .project-card {
