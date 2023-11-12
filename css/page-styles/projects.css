@@ -144,6 +144,37 @@
     display: block;
 }
 
+.backend-code-section {
+    padding-top: 20px;
+}
+
+/* Slick slider */
+.slick-prev, .slick-next,
+.slick-prev:hover, .slick-next:hover,
+.slick-prev:focus, .slick-next:focus {
+    z-index: 999; /* One less than that of navbar */
+    width: 40px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #757a79;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    font-weight: bolder;
+}
+
+.slick-slider { /* Added from: https://github.com/kenwheeler/slick/issues/826#issuecomment-327663757 */
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.slick-slider ::selection {
+    background: #ffcc00 !important; /* TODO: decide on colour */
+    color: #000000; /* TODO: Same as ^^^ */
+}
 @media (max-width: 630px) {
     .project-card {
         width: 400px;

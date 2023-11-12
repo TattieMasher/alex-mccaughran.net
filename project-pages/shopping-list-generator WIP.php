@@ -11,6 +11,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes/themes/prism-material-dark.css"> <!-- Syntax highlighting -->
         <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.0"></script>
+        <link rel="stylesheet" href="../js/slick/slick.css" /> <!-- https://kenwheeler.github.io/slick/ -->
+        <link rel="stylesheet" href="../js/slick/slick-theme.css" />
         <link rel="stylesheet" href="../css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="../js/scripts.js"></script>
         <script type="text/javascript" src="../js/projects-scripts.js"></script>
@@ -24,12 +26,12 @@
             <section class="project-page-header">
                 <div>
                     <h1>Shopping List Generator</h1>
-                    <h4>Simplify the most difficult part of your weekly shop– the planning! Supply this application with the meals you wish to have, then allow it to tell you all that you need.</h4>
+                    <h4>Simplify the most difficult part of your weekly shop– the planning! Supply this application with the meals you wish to have, it'll then tell you all the ingredients that you need.</h4>
                     <h4>Meal prep made easy.</h4>
                 </div>
                 <div class="project-header-links">
                     <a href="https://shopping-list.alex-mccaughran.net/"><img class="project-github" src="/images/play-sign.png"></a>
-                    <a href="https://github.com/TattieMasher/Android-Password-Manager"><img class="project-github" src="/images/github-sign.png"></a>
+                    <a href="https://github.com/TattieMasher/Grocery-shopper"><img class="project-github" src="/images/github-sign.png"></a>
                 </div>
             </section>
             <section class="project-section">
@@ -40,20 +42,26 @@
                 </p>
                 <div class="shopping-list-swapper">
                     <ul class="tabs">
-                        <li class="tab"><a href="#front-end-content">Front-end</a></li>
                         <li class="tab"><a href="#back-end-content">Back-end</a></li>
+                        <li class="tab"><a href="#front-end-content">Front-end</a></li>
                     </ul>
-                    <div id="front-end-content" class="tab-content">
+                    <div id="back-end-content" class="tab-content">
                         <?php include('../components/shopping-backend-content.php');?> <!-- TODO: THESE HAVE BEEN SWAPPED -->
                     </div>
-                    <div id="back-end-content" class="tab-content">
+                    <div id="front-end-content" class="tab-content">
                         <?php include('../components/shopping-frontend-content.php');?>
                     </div>
+                    <!-- TODO: Add another set of buttons? -->
                 </div>
             </section>
         </main>
         <?php include('../components/footer.php');?>
 
+        <!-- External Scripts -->
         <script src="../js/prism.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/slick/slick.min.js"></script>
+        <script type="text/javascript" src="../js/code-slider.js"></script> <!-- Initialising slick slider -->
     </body>
 </html>
