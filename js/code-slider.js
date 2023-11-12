@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Initialize the Slick Slider
+    // Initialise the Slick Slider
     $('.code-block-slider').slick({
         arrows: true,
         draggable: false,

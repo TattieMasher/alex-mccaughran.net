@@ -23,8 +23,8 @@
                 <div id="contact-form-container">
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    include("secret-key.php");
                     $captcha = $_POST['g-recaptcha-response'];
-                    $secretKey = "6LeKXwkpAAAAAH3NBbmZMlOnVngj7ZDqnMQ_LmWm";
                     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
                     $responseKeys = json_decode($response,true);
                     
