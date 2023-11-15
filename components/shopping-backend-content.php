@@ -1,5 +1,5 @@
 <section class="backend-code-section">
-    <h3 class="section-title">MySQL</h3>
+    <h2 class="section-title">MySQL</h2>
     <div>
         <p>
             First of all, we define the <a class="about-link" href="https://github.com/TattieMasher/Grocery-shopper/tree/main/database">database</a>:
@@ -25,7 +25,7 @@
 </section>
 
 <section class="backend-code-section">
-    <h3 class="section-title">REST API (Spring Boot)</h3>
+    <h2 class="section-title">REST API (Spring Boot)</h2>
     <div>
         <p>
             My Spring Boot API uses JDK 17, Spring Data JPA, and MySQL connector J to connect to my database and persist objects from it.
@@ -150,7 +150,7 @@ public class MealIngredientId implements Serializable {
     private Long ingredientId;</code></pre>
 
         <p>
-            Within my shoppingList class, I've defined the below method `combineItems()`, to provide the main
+            Within my shoppingList class, I've defined the below method combineItems(), to provide the main
             application functionalitity. Shopping list items are bundled together and their combined quantities are
             saved to the list's `items` field. It's defined in an object-oriented way, where a shopping list
             is responsible fo its own items ArrayList. This method is called whenever a shopping list is returned,
@@ -220,7 +220,10 @@ public class MealIngredientId implements Serializable {
         return ResponseEntity.ok(savedShoppingList);
     }</code></pre>
     </div>
+</section>
 
+<section class="backend-code-section">
+    <h2 class="section-title">JSON Request/Response</h2>
     <!-- JSON example -->
     <div>
         <p>
@@ -292,9 +295,10 @@ public class MealIngredientId implements Serializable {
 }</code></pre>
         <p>
             As you can see, the structured JSON gives a combined list of user-supplied ingrdients (in this
-            example, 2x 300g Chicken Breast becomes 600g Chicken Breast). It also takes the last part of the
-            request path and sets the list name to this. A list id is returned also, to allow this list to be 
-            retrieved again and edited on the client-side, then re-saved.
+            example, 2x 300g Chicken Breast becomes 600g Chicken Breast and 2+4 pieces of Bell Peppers becomes 6 pieces).
+            Firstly, supplied ingredients (with their quantities and units) are saved to the database as shopping list items.
+            Then, a shopping list is saved, with the new list items added in. The last part of the request path is also used
+            to set the list name. A list id is returned also, to allow this list to be retrieved again and edited on the client-side, then re-saved.
         </p>
     </div>
 </section>

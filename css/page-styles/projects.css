@@ -20,6 +20,7 @@
     border-radius: 5%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     margin: 5px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     transition: box-shadow 0.3s ease;
@@ -144,7 +145,8 @@
     display: block;
 }
 
-.backend-code-section {
+.backend-code-section,
+.frontend-code-section {
     padding-top: 20px;
 }
 
@@ -175,6 +177,7 @@
     background: #ffcc00 !important; /* TODO: decide on colour */
     color: #000000; /* TODO: Same as ^^^ */
 }
+
 @media (max-width: 630px) {
     .project-card {
         width: 400px;
