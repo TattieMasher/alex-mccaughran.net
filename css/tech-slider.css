@@ -1,0 +1,87 @@
+.tech-slider {
+  background: white;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); TODO: Decide if I want this */
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.tech-slider::before, .tech-slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.tech-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.tech-slider::before {
+  left: 0;
+  top: 0;  
+}
+
+.tech-slider .slide-track {
+	width: 720px;
+	animation: scroll 45s linear infinite;
+  display: flex;
+}
+
+.tech-slider .tech-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto 0px;
+}
+
+.devicon {
+    margin: 0px 45px;
+    font-size: 90px;
+    width: 90px;
+    height: 90px;
+    color: #007bff;
+    transition: opacity 0.5s;
+}
+
+.icon-description {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Hover effects */
+.tech-slider:hover .slide-track {
+	/* animation-play-state: paused; TODO: Decide if I want to bring this back? */
+}
+
+.tech-slide:hover .devicon {
+    opacity: 0.25;
+}
+
+.tech-slide:hover .icon-description {
+    display: block;
+    opacity: 1;
+}
+
+
+/* Scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%); /* Check me, can't get it to always be seamless */
+  }
+}

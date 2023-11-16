@@ -1,0 +1,137 @@
+@import url("navbar.css");
+@import url("footer.css");
+
+@import url("page-styles/index.css");
+
+@import url("page-styles/about.css");
+@import url("ubuntu-terminal.css");
+@import url("timeline.css");
+@import url("slider.css");
+@import url("tech-slider.css");
+
+@import url("page-styles/projects.css");
+
+@import url("page-styles/contact.css");
+
+/* Shared styles */
+body {
+    margin: 0px;
+    padding-top: 90px;
+    font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+}
+
+main {
+	min-height: calc(100vh - 90px - 64px);
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.page-title {
+	font-size: 64px;
+	font-weight: 600;
+}
+
+/* Tiny screens */
+@media (max-width: 350px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+/* Small Phones */
+@media (min-width: 351px) and (max-width: 554px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+/* Large Phones */
+@media (min-width: 554px) and (max-width: 890px) {
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 890px) and (max-width: 970px) {
+}
+
+/* Laptops and Desktops */
+@media (min-width: 970px) {
+}
+
+
+/* Animations */
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* TODO: Reverse this as well */
+@keyframes underlineAnimation {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes waveAnimation {
+	 0% { transform: rotate( 0.0deg) }
+	10% { transform: rotate(7.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+	20% { transform: rotate(-4.0deg) }
+	30% { transform: rotate(7.0deg) }
+	40% { transform: rotate(-2.0deg) }
+	50% { transform: rotate(5.0deg) }
+	60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes growOnHoverAnimation {
+	0%, 100% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.05);
+	}
+	50% {
+		transform: scale(0.95);
+	}
+	75% {
+		transform: scale(1.05);
+	}
+}
+
+@keyframes fadeInHeightAllow {
+	from {
+		height: 0;
+	}
+	to {
+		height: fit-content;
+	}
+	
+}
+
+@keyframes codeMoveIn {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

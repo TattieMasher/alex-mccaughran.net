@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/main.css" /> <!-- My styles -->
         <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript" src="js/about-scripts.js"></script>
+        <script type="text/javascript" src="js/tech-slider.js"></script>
         <title>Alex McCaughran</title>
     </head>
     <body>
@@ -27,9 +28,9 @@
                 <div id="about-overview">
 					<div class="about-card">
                         <p class="about-card-description fade-in-about3">In my current role, I'm primarily committed to provide valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
-                        <p class="about-card-description-remove2 fade-in-about3">My three-man team and I are responsible operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
+                        <p class="about-card-description-remove2 fade-in-about3">My three-man team and I are responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
                         <p class="about-card-description-remove2 fade-in-about3">On match days, we provide constant reporting and on-the-fly support for our turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
-                        <p class="about-card-description-remove fade-in-about3">We constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
+                        <p class="about-card-description-remove fade-in-about3">We constantly seek process improvements and recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
 					</div>
                     <div class="image-container">
                         <img id="me-pic" class="fade-in-about3" src="images/Me-500x500.png" alt="Me">
@@ -80,6 +81,12 @@
                 </div>
                 <?php include('components/uni-slider.php');?>
             </section>
+            <section id="skills-section">
+                <h3 class="section-title">Tech Skills</h3>
+                <p>Thoughout my studies, and in my own endevours, I've used a number of technologies— too many to remember and count, in all honesty! Some of the software development technologies I'm most familiar and comfortable with are below. I am most proficient in Java and Python, since many of my university modules have been taught on these languages. 
+                <?php include('components/tech-slider.php'); ?>
+                <p>At the moment, my website shows a (very) small collection of the personal projects that I was happy to make public. You can see my skills with some of the below technologies in action on my <a class="about-link" href="projects.php">projects</a> page. Here I've showcased some of the code going into things I've made. As you'll be able to see, front-end development is not exactly my strong suit, but it is a skill I've been increasing with every iteration of every project!</p></p>
+            </section>
             <section id="about-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">So . . .</h3>
                 <p>I hope that now– with my developing skills and my eagerness to learn more– that I will make a good candidate to be considered for a Junior Developer position, with room to grow into my full potential.</p>
@@ -90,5 +97,6 @@
         <script type="text/javascript" src="js/slider.js"></script> <!-- Uni slider functionality -->
         <?php include('components/footer.php');?>
         <script type="text/javascript" src="js/fade-in-sections.js"></script>
+        <script type="text/javascript" src="js/tech-slider.js"></script>
     </body>
 </html>

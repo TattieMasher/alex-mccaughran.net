@@ -22,7 +22,7 @@
         <main>
             <section class="project-page-header">
                 <div>
-                    <h1>Compound Interest Android App</h1>
+                    <h1>Android Compound Interest Calculator</h1>
                     <h4>This app calculates the compound interest growth of an investment over time. You could also use this, with a negative interest value, to calcuate depreciaton of an asset.</h4>
                 </div>
                 <div class="project-header-links">

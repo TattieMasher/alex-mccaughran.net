@@ -56,13 +56,15 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-pic"></div>
-                    <div class="project-text">
-                        <h5 class="project-header">Compound Interest Android App</h5>
-                        <p class="project-desc">
-                            Android app to calculate compound interest over set periods of time.
-                        </p>
-                    </div>
+                    <a class="project-link" href="project-pages/compound-interest.php">
+                        <img class="project-pic" src="images/projects/thumbs/InterestThumb.png">
+                        <div class="project-text">
+                            <h5 class="project-header">Compound Interest Android App</h5>
+                            <p class="project-desc">
+                                Calculate compound interest over set periods of time.
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 
             </section>
