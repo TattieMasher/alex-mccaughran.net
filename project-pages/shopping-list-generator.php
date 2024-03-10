@@ -49,7 +49,7 @@
                         <?php include('../components/shopping-backend-content.php');?> <!-- TODO: MAKE SLICK SLIDER INITIALISE ONLY WHEN RENDERED -->
                     </div>
                     <div id="front-end-content" class="tab-content">
-                        <?php include('../components/shopping-frontend-content.php');?>
+                        <?php include('../components/shopping-frontend-content.php');?> <!-- SWAPPED!!!    TODO: SWAP ME BACK -->
                     </div>
                     <!-- TODO: Add another set of buttons? -->
                 </div>

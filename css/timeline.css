@@ -68,7 +68,7 @@
 }
 
 .pulse {
-  animation: pulseAnimation 5s ease-in-out infinite;
+  animation: pulseAnimation 4s ease-in-out infinite;
 }
 
 .icon .left,
@@ -293,6 +293,16 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
+/*
+.uni {
+  color: purple;
+} TODO: decide on this, or the way it currently is
+*/
+.uni-pulse {
+  animation: pulseAnimation 4s ease-in-out infinite;
+  /* animation: altPulseAnimation 4s ease-in-out infinite; */
+}
+
 @media (max-width: 350px) {
   .icon {
     width: 20px;
@@ -351,4 +361,19 @@
     100% {
         background-color: #007bff;
     }
+}
+
+@keyframes altPulseAnimation {
+  0% {
+      background-color: #007bff;
+  }
+50% {
+      background-color: #007bff;
+  }
+  75% {
+      background-color: purple;
+  }
+  100% {
+      background-color: #007bff;
+  }
 }

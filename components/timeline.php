@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="event" data-start-date="2020-10-01" data-end-date="2024-06-01">
-			<div class="icon uni pulse">
+			<div class="icon uni-pulse">
 				<div class="tooltip">
 					<div class="central">
 						<div class="tooltip-header">
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="event-date">
+			<div class="event-date uni">
                 <h4>2020<br>—<br>Now</h4>
             </div>
 		</div>
@@ -118,8 +118,9 @@
 						</div>
 						<div class="text-content">
 							<p>
-								At Microtech, I delivered outstanding technical support to GP practices and corporate clients all across Scotland. I was also responsible for overseeing operations on NHS Sotland's EDT (Electronic Document Transport) Hubs, which carried any and all hospital and laboratory records to GPs.
-								This job involved a lot of troubleshooting between multiple different software systems and liasing with third-parties to achieve resolution of issues. Strong prioritisation skills were necessary for success.
+								At Microtech, I delivered outstanding technical support to GP practices and corporate clients all across Scotland.<br><br>
+								I was also responsible for overseeing operations on NHS Sotland's EDT (Electronic Document Transport) Hubs, which carried any and all hospital and laboratory records to GPs.<br><br>
+								This job involved a lot of troubleshooting between multiple different software systems and liasing with third-parties to achieve issue resolutions in a timely manner. Strong prioritisation skills were necessary for success.
 							</p>
 							<h5>Soft Skills:</h5>
 							<ul>
@@ -162,8 +163,10 @@
                         </div>
                         <div class="text-content">
                             <p>
-								My job role at Celtic is rather varied, but I'm focussed primarily on delivering data to support high-level business decisions. I regularly interact with two complex databases and provide useful inisghts from them, communicated in an accessible and friendly manner through Tableau dashboards.
-                                I'm also reposnible for ensuring entry of all 50,000+ fans on a match day, through maintenance and troubleshooting our vast turnstile network. On top of these, I also perform gneeral IT on Windows machines for the 15-or-so strong customer service team in the Ticket Office.
+								My job role at Celtic is rather varied, but always focussed on delivering the best resulst in a forward-thinking way. I'm focussed primarily on delivering data to support high-level business decisions. I regularly interact with complex databases and provide useful inisghts from them, communicated in an accessible and interactive manner through Tableau dashboards.<br><br>
+                                I'm also responsible for ensuring entry of all 50,000+ fans on a match day, through maintenance and troubleshooting on our vast turnstile network and venue entry software.<br><br>
+                                On top of these, I also perform general IT on Windows machines for the 15-or-so strong customer service team in the Ticket Office.<br><br>
+                                At Celtic, I'm always on the hunt for improvements to our data and IT-related processes. My proactive approach has led to the successful completion of multiple Continuous Improvement projects, where I played a key role in driving these improvements.
 							</p>
                             <h5>Soft Skills:</h5>
                             <ul>

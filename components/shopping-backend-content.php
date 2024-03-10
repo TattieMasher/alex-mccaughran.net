@@ -136,8 +136,8 @@ public class ShoppingListItem {
         </div>
     </div>
 
-    <!-- combineItems -->
-    <div>
+    <!-- mealIngredientPK -->
+    <div class="code-block-right">
         <p>
             Some additional classes had to be created, such as to model the composite key for the meal-ingredient link table:
         </p>
@@ -148,41 +148,66 @@ public class MealIngredientId implements Serializable {
 
     @Column(name = "ingredient_id")
     private Long ingredientId;</code></pre>
+    </div>
 
-        <p>
-            Within my shoppingList class, I've defined the below method combineItems(), to provide the main
-            application functionalitity. Shopping list items are bundled together and their combined quantities are
-            saved to the list's `items` field. It's defined in an object-oriented way, where a shopping list
-            is responsible fo its own items ArrayList. This method is called whenever a shopping list is returned,
-            so that the user always receives an aggregated list. The comments below explain the exact 
-            implementation of this requirement.
-        </p>
+    <!-- combineItems -->
+    <div class="code-block-left">
         <pre><code class="language-java">public void combineItems() {
-    // HashMap map items by ingredientId and quantityUnit against ShoppingListItem
-    HashMap<String, ShoppingListItem> groupedItems = new HashMap<>();
+        // HashMap map items by ingredientId and quantityUnit against ShoppingListItem
+        HashMap<String, ShoppingListItem> groupedItems = new HashMap<>();
 
-    // Iterate all current ShoppingListItems
-    for (ShoppingListItem item : items) {
-        // Create a composite HashMap key made up of current list item's id and quantity unit
-        String key = item.getIngredient().getIngredientId() + "_" + item.getItemQuantityUnit();
+        // Iterate all current ShoppingListItems
+        for (ShoppingListItem item : items) {
+            // Create a composite HashMap key made up of current list item's id and quantity unit
+            String key = item.getIngredient().getIngredientId() + "_" + item.getItemQuantityUnit();
 
-        // If current item exists with same quantity unit
-        if (groupedItems.containsKey(key)) {
-            // Get existing item
-            ShoppingListItem existingItem = groupedItems.get(key);
-            // Sum the quantity of current item with the existent one
-            BigDecimal combinedQuantity = existingItem.getItemQuantity().add(item.getItemQuantity());
-            // Update existent quantity with sum
-            existingItem.setItemQuantity(combinedQuantity);
-        } else {
-            // Item doesn't exist in the map, add it to it
-            groupedItems.put(key, item);
+            // If current item exists with same quantity unit
+            if (groupedItems.containsKey(key)) {
+                // Get existing item
+                ShoppingListItem existingItem = groupedItems.get(key);
+                // Sum the quantity of current item with the existent one
+                BigDecimal combinedQuantity = existingItem.getItemQuantity().add(item.getItemQuantity());
+                // Update existent quantity with sum
+                existingItem.setItemQuantity(combinedQuantity);
+            } else {
+                // Item doesn't exist in the map, add it to it
+                groupedItems.put(key, item);
+            }
         }
-    }
 
-    // Update items list with the combined items
-    items = new ArrayList<>(groupedItems.values());
-    }</code></pre>
+        // Update items list with the combined items
+        items = new ArrayList<>(groupedItems.values());
+}</code></pre>
+        <div>
+            <p>
+                Within my ShoppingList Entity class, I've defined this method, combineItems(), to provide the main
+                application functionalitity by intelligently consolidating individual shopping list items into grouped quantities.
+                <br><br>
+                Shopping list items are bundled together and their combined quantities are
+                saved to the list's `items` field. It's defined in an object-oriented way, where a shopping list
+                is responsible for its own items ArrayList.
+                <br><br>
+                This method is called whenever a shopping list is returned,
+                so that the user always receives an aggregated list.
+                <br><br>
+                To summarise this method:
+                <ul>
+                    <li>
+                        A HashMap is created.
+                    </li>
+                    <li>
+                        Each existing shoppingList item is iterated and a composite key of the ingredient's id value and quantity unit is created then added to a hashmap as a key, mapped against the quantity amount.
+                    </li>
+                    <li>
+                        If one of these composite keys already exist in the HashMap, the existing quantity amount is added to that of the current ingredient quantity in the HashMap.
+                    </li>
+                    <li>
+                        Once all items have been iterated, we know that our list has been combined. At this point, we overwrite our old, un-aggregated items field with our newly combined one.
+                    </li>
+                </ul>
+                <br><br>
+            </p>
+        </div>
     </div>
 
     <!-- Create list -->
@@ -225,11 +250,12 @@ public class MealIngredientId implements Serializable {
 <section class="backend-code-section">
     <h2 class="section-title">JSON Request/Response</h2>
     <!-- JSON example -->
-    <div>
-        <p>
-            An example of a structured JSON request to this method, with API endpoint `lists/create/New List`, might be:
-        </p>
-        <pre><code class="language-js">[
+    <div class="code-block-left">
+        <div>
+            <p>
+                An example of a structured JSON request to this method, with API endpoint `lists/create/New List`, might be:
+            </p>
+            <pre><code class="language-js">[
     {
         "ingredient": {
             "ingredientId": 2,
@@ -262,37 +288,39 @@ public class MealIngredientId implements Serializable {
         "itemQuantityUnit": "grams"
     }
 ]</code></pre>
+        </div>
+        <div>
+            <p>
+                Which would return:
+            </p>
+            <pre><code class="language-js">{
+        "shoppingListId": 5,
+        "listName": "New List",
+        "items": [
+            {
+                "itemId": 21,
+                "ingredient": {
+                    "ingredientId": 1,
+                    "ingredientName": "Chicken Breast"
+                },
+                "itemQuantity": 600.00,
+                "itemQuantityUnit": "grams"
+            },
+            {
+                "itemId": 19,
+                "ingredient": {
+                    "ingredientId": 2,
+                    "ingredientName": "Bell Peppers"
+                },
+                "itemQuantity": 6.00,
+                "itemQuantityUnit": "pieces"
+            }
+        ]
+    }</code></pre>
+        </div>
     </div>
 
-    <!-- JSON return -->
     <div>
-        <p>
-            Which would return:
-        </p>
-        <pre><code class="language-js">{
-    "shoppingListId": 5,
-    "listName": "New List",
-    "items": [
-        {
-            "itemId": 21,
-            "ingredient": {
-                "ingredientId": 1,
-                "ingredientName": "Chicken Breast"
-            },
-            "itemQuantity": 600.00,
-            "itemQuantityUnit": "grams"
-        },
-        {
-            "itemId": 19,
-            "ingredient": {
-                "ingredientId": 2,
-                "ingredientName": "Bell Peppers"
-            },
-            "itemQuantity": 6.00,
-            "itemQuantityUnit": "pieces"
-        }
-    ]
-}</code></pre>
         <p>
             As you can see, the structured JSON gives a combined list of user-supplied ingrdients (in this
             example, 2x 300g Chicken Breast becomes 600g Chicken Breast and 2+4 pieces of Bell Peppers becomes 6 pieces).
@@ -301,4 +329,7 @@ public class MealIngredientId implements Serializable {
             to set the list name. A list id is returned also, to allow this list to be retrieved again and edited on the client-side, then re-saved.
         </p>
     </div>
+
+    <!-- JSON return -->
+
 </section>

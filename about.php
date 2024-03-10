@@ -27,7 +27,7 @@
                 <p class="fade-in-about3">I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software) student</a>, studying whilst working full-time as a Techinical Analyst for Celtic FC. I'm now looking to pursue opportunities in my dream sector– software development.</p>
                 <div id="about-overview">
 					<div class="about-card">
-                        <p class="about-card-description fade-in-about3">In my current role, I'm primarily committed to provide valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
+                        <p class="about-card-description fade-in-about3">In my current role, I'm primarily committed to providing valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support critical decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
                         <p class="about-card-description-remove2 fade-in-about3">My three-man team and I are responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
                         <p class="about-card-description-remove2 fade-in-about3">On match days, we provide constant reporting and on-the-fly support for our turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
                         <p class="about-card-description-remove fade-in-about3">We constantly seek process improvements and recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
@@ -47,7 +47,8 @@
             </section>
             <section id="skills-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">Personal Traits</h3>
-                <p>I'm a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding solutions to them.</p>
+                <p>I'm a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding solutions to them. This is something I truly enjoy more than anything else.</p>
+                <p>I feel that high-pressure environments are where I truly shine most— pressure makes diamonds after all!</p>
                 <ul id="skills-overview">
                     <li><div class="skill-card">
                         <h4>Enthusiastic learner</h4>
@@ -70,14 +71,26 @@
                     <li><div class="skill-card">
                         <h4>Team player</h4>
                     </div></li>
+                    <li><div class="skill-card">
+                        <h4>Respectful outlook</h4>
+                    </div></li>
+                    <li><div class="skill-card">
+                        <h4>Analytical Mindset</h4>
+                    </div></li>
+                    <li><div class="skill-card">
+                        <h4>Innovative problem-solver</h4>
+                    </div></li>
+                    <li><div class="skill-card">
+                        <h4>Forward-thinking</h4>
+                    </div></li>
                 </ul>
             </section>
             <section id="uni-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">University</h3>
                 <div id="uni-summary">
-                    <p>During the first lockdown, I took a decisive step towards my dream career in software development by enrolling with the Open University degree program while balancing full-time work. Since then, I've maintained an excellent grade by using excellent time-management, fuelled by a deep desire to exceed at my commitments. </p>
+                    <p>During the first lockdown, I took a decisive step towards my dream career in software development by enrolling with the Open University, while balancing full-time work. Since then, I've maintained an excellent grade (while continuously working full-time) by using excellent time-management, fuelled by a deep desire to exceed at my commitments. </p>
                     <p>If my current trajectory is maintained, <b>I will graduate comfortably with a First Class Honours (1:1).</b></p>
-                    <p>Throughout my time at the Open University, I have learned about software development, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and the list goes on(!), but <b>object-oriented programming has interested me most.</b></p>
+                    <p>Throughout my time at the Open University, I have learned about software development patterns, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and the list goes on (and on!), but <b>object-oriented programming has interested me most.</b></p>
                 </div>
                 <?php include('components/uni-slider.php');?>
             </section>

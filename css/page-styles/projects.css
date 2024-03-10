@@ -85,18 +85,6 @@
     flex-direction: row;
 }
 
-.code-block {
-    margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: 50vw 40vw;
-}
-
-.code-block-right {
-    margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: 30vw 60vw;
-}
-
 .code-block p,
 .code-block-right p {
     margin: auto 5px;
@@ -171,11 +159,44 @@
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
+    margin-left: 3px; /* TODO: Make responsive*/
+    width: calc(100% - 10px);
 }
 
 .slick-slider ::selection {
     background: #ffcc00 !important; /* TODO: decide on colour */
     color: #000000; /* TODO: Same as ^^^ */
+}
+
+.code-block pre,
+.code-block-right pre,
+.code-block-left pre {
+    margin: auto 0px;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.code-block {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+}
+
+.code-block-right {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 30vw 60vw;
+}
+
+.code-block-left {
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 60% 40%;
+}
+
+pre {
+    font-size: 16px !important;
 }
 
 @media (max-width: 630px) {
@@ -186,7 +207,8 @@
 
 @media (max-width: 830px) {
 	.code-block,
-	.code-block-right {
+	.code-block-right,
+    .code-block-left {
         display: block;
         margin-top: 50px;
         border: 0.5px solid #f2f3f2;

@@ -35,55 +35,92 @@ const stringsArray = ["develop interesting code", "play guitar", "listen to podc
 	 "solve problems", "drink coffee"];
 
 function typeAndDeleteStrings(stringsArray) {
-	const outputElement = document.getElementById("command-input");
+    const outputElement = document.getElementById("command-input");
+    let currentIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false;
+    let animationPaused = false;
+    let deletionWasInProgress = false;
 
-	// Speed settings for typing, deletion, and pauses (in milliseconds)
-	const typingSpeed = 75;    // Speed at which characters are typed
-	const deletionSpeed = 50;   // Speed at which characters are deleted
-	const pauseDuration = 1000; // Duration to pause between animations
-	const rewriteDuration = 200; // Duration to pause between deletion and writing a enw string
+    // Speed settings for typing, deletion, and pauses (in milliseconds)
+    const typingSpeed = 75;
+    const deletionSpeed = 50;
+    const pauseDuration = 1000;
 
-	// Function to type a given string on screen
-	function typeString(str) {
-		let currentCharIndex = 0;
+    // Helper function to check if the element is in the viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
 
-		// Recursive function to type the next character
-		function typeNextChar() {
-			if (currentCharIndex < str.length) {
-				outputElement.textContent += str[currentCharIndex];
-				currentCharIndex++;
+    // Function to handle typing and deletion
+    function handleTyping() {
+        if (!isElementInViewport(outputElement)) {
+            // Pause if not in viewport
+            animationPaused = true;
+            // Mark if we were in the middle of deleting
+            if (isDeleting) {
+                deletionWasInProgress = true;
+            }
+            return;
+        }
 
-				setTimeout(typeNextChar, typingSpeed);
-			} else {
-				setTimeout(deleteString, pauseDuration);
-			}
-		}
+        if (animationPaused) {
+            // Resume the animation if it was paused
+            animationPaused = false;
+            if (isDeleting && !deletionWasInProgress) {
+                // If we weren't in the middle of deleting, pick up the next string
+                currentCharIndex = 0;
+                isDeleting = false;
+                currentIndex = (currentIndex + 1) % stringsArray.length;
+            }
+            deletionWasInProgress = false; // Reset flag as we are resuming
+        }
 
-		typeNextChar();
-	}
+        if (isDeleting) {
+            // Delete characters
+            if (outputElement.textContent.length > 0) {
+                outputElement.textContent = outputElement.textContent.slice(0, -1);
+                setTimeout(handleTyping, deletionSpeed);
+            } else {
+                // When deletion is complete, reset flags and proceed to next string
+                isDeleting = false;
+                deletionWasInProgress = false;
+                currentIndex = (currentIndex + 1) % stringsArray.length;
+                setTimeout(handleTyping, pauseDuration);
+            }
+        } else {
+            // Type characters
+            if (currentCharIndex < stringsArray[currentIndex].length) {
+                outputElement.textContent += stringsArray[currentIndex][currentCharIndex++];
+                setTimeout(handleTyping, typingSpeed);
+            } else {
+                // Start deleting after typing is complete
+                currentCharIndex = 0;
+                isDeleting = true;
+                setTimeout(handleTyping, pauseDuration);
+            }
+        }
+    }
 
-	// Function to delete the typed string from the output element
-	function deleteString() {
-		const currentContent = outputElement.textContent;
+    // Start the typing process
+    handleTyping();
 
-		if (currentContent.length > 0) {
-			// Set outputted text to current text, missing last character
-			outputElement.textContent = currentContent.slice(0, -1);
-
-			setTimeout(deleteString, deletionSpeed);
-		} else {
-			// Reset currentIndex to 0 if all strings are completed
-			currentIndex = (currentIndex + 1) % stringsArray.length;
-
-			setTimeout(() => {
-				typeString(stringsArray[currentIndex]);
-			}, pauseDuration);
-		}
-	}
-
-	let currentIndex = 0;
-	typeString(stringsArray[currentIndex]);
+    // Add scroll event listener to resume animation when scrolled into view
+    window.addEventListener('scroll', function() {
+        if (isElementInViewport(outputElement)) {
+            if (animationPaused) {
+                handleTyping();
+            }
+        }
+    });
 }
+
 
 // Function to create the flickering cursor effect that Linux terminal has
 function flickerCursor() {
