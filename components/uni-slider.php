@@ -101,13 +101,13 @@
                     <li>
                         <div class="slide-inner-grid">
                             <h4><a class="about-link" href="https://www.open.ac.uk/courses/qualifications/details/tm358">TM358 - Machine learning and Artificial Intelligence</a></h4>
-                            <h4>...</h4>
+                            <h4>95%</h4>
                         </div>
                     </li>
                     <li>
                         <div class="slide-inner-grid">
                             <h4><a class="about-link" href="https://www.open.ac.uk/courses/qualifications/details/tm354">TM354 - Software Engineering</a></h4>
-                            <h4>...</h4>
+                            <h4>91%</h4>
                         </div>
                     </li>
                     <li>

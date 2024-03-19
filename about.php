@@ -24,13 +24,13 @@
             <section id="about-section" class="fade-in-section">
 				<h1 id="fade-in-about1" class="section-title">Hi,<span id="fade-in-about2"> nice to meet you!</span></h1>
                 <?php include('components/terminal.php'); ?>
-                <p class="fade-in-about3">I'm a 25 year old, final-year <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software) student</a>, studying whilst working full-time as a Techinical Analyst for Celtic FC. I'm now looking to pursue opportunities in my dream sector– software development.</p>
+                <p class="fade-in-about3">Alongside my <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> coursework, I work full-time as a Techinical Analyst for Celtic FC. As I approach graduation, I am keen to pursue opportunities in my dream sector– software development.   </p>
                 <div id="about-overview">
 					<div class="about-card">
-                        <p class="about-card-description fade-in-about3">In my current role, I'm primarily committed to providing valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support critical decision making at all levels of the business. I build interesting, dynamic interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
+                        <p class="about-card-description fade-in-about3">In my current role, I am primarily committed to providing valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support critical decision making at all levels of the business. I compile these datasets into interesting, dynamic, interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
                         <p class="about-card-description-remove2 fade-in-about3">My three-man team and I are responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
-                        <p class="about-card-description-remove2 fade-in-about3">On match days, we provide constant reporting and on-the-fly support for our turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
-                        <p class="about-card-description-remove fade-in-about3">We constantly seek process improvements and recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
+                        <p class="about-card-description-remove2 fade-in-about3">On match days, we provide constant monitoring and on-the-fly support for our vast turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
+                        <p class="about-card-description-remove fade-in-about3">We constantly seek process improvements and have recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
 					</div>
                     <div class="image-container">
                         <img id="me-pic" class="fade-in-about3" src="images/Me-500x500.png" alt="Me">
@@ -47,7 +47,7 @@
             </section>
             <section id="skills-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">Personal Traits</h3>
-                <p>I'm a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding solutions to them. This is something I truly enjoy more than anything else.</p>
+                <p>I am a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding solutions to them. This is something I truly enjoy more than anything else.</p>
                 <p>I feel that high-pressure environments are where I truly shine most— pressure makes diamonds after all!</p>
                 <ul id="skills-overview">
                     <li><div class="skill-card">
@@ -63,6 +63,9 @@
                         <h4>Meticulous attention to detail</h4>
                     </div></li>
                     <li><div class="skill-card">
+                        <h4>Resilient personality</h4>
+                    </div></li>
+                    <li><div class="skill-card">
                         <h4>Strong time management</h4>
                     </div></li>
                     <li><div class="skill-card">
@@ -75,10 +78,13 @@
                         <h4>Respectful outlook</h4>
                     </div></li>
                     <li><div class="skill-card">
-                        <h4>Analytical Mindset</h4>
+                        <h4>Analytical mindset</h4>
                     </div></li>
                     <li><div class="skill-card">
                         <h4>Innovative problem-solver</h4>
+                    </div></li>
+                    <li><div class="skill-card">
+                        <h4>Ambitious</h4>
                     </div></li>
                     <li><div class="skill-card">
                         <h4>Forward-thinking</h4>
@@ -88,9 +94,10 @@
             <section id="uni-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">University</h3>
                 <div id="uni-summary">
-                    <p>During the first lockdown, I took a decisive step towards my dream career in software development by enrolling with the Open University, while balancing full-time work. Since then, I've maintained an excellent grade (while continuously working full-time) by using excellent time-management, fuelled by a deep desire to exceed at my commitments. </p>
-                    <p>If my current trajectory is maintained, <b>I will graduate comfortably with a First Class Honours (1:1).</b></p>
-                    <p>Throughout my time at the Open University, I have learned about software development patterns, networking protocols, system security, web APIs, cloud computing, ITIL service management practices, database architecture/administration, operating systems, ethics in computing, statistical analysis and the list goes on (and on!), but <b>object-oriented programming has interested me most.</b></p>
+                    <p>During lockdown, I took a decisive step towards my dream career in software development by enrolling in the Open University. Since then, I have maintained excellent grades whilst balancing full-time work commitments. I have done this by using stellar time management but most importantly fueled by determination to exceed my commitments- and a lot of hard work!</p>
+                    <p>I am currently set to graduate with a <b>First Class Honours (1:1).</b></p>
+                    <p>Throughout my time with the Open University, I have learned invaluable skills, such as software development patterns, machine learning techniques, networking protocols, system security, web APIs, cloud computing, ITIL service management, database architecture/administration, operating systems, ethics in computing, statistical analysis (the list goes on!).</p>
+                    <p>Of all my studies, <b>object-oriented programming</b> has interested me most and I its my dream to leverage this preference in a cloud environment.</p>
                 </div>
                 <?php include('components/uni-slider.php');?>
             </section>
@@ -98,12 +105,12 @@
                 <h3 class="section-title">Tech Skills</h3>
                 <p>Thoughout my studies, and in my own endevours, I've used a number of technologies— too many to remember and count, in all honesty! Some of the software development technologies I'm most familiar and comfortable with are below. I am most proficient in Java and Python, since many of my university modules have been taught on these languages. 
                 <?php include('components/tech-slider.php'); ?>
-                <p>At the moment, my website shows a (very) small collection of the personal projects that I was happy to make public. You can see my skills with some of the below technologies in action on my <a class="about-link" href="projects.php">projects</a> page. Here I've showcased some of the code going into things I've made. As you'll be able to see, front-end development is not exactly my strong suit, but it is a skill I've been increasing with every iteration of every project!</p></p>
+                <p>This website illustrates a few personal projects of mine, demonstrating my skills with some of these languages and frameworks. Please visit my <a class="about-link" href="projects.php">projects page</a> to see them in action! There, I showcase some of the code going into them.</p>
+                <p>Through the development of these projects and University work, I have been further building upon my capabilities (both back-end and front-end) with every iteration of every project.</p>
             </section>
             <section id="about-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">So . . .</h3>
-                <p>I hope that now– with my developing skills and my eagerness to learn more– that I will make a good candidate to be considered for a Junior Developer position, with room to grow into my full potential.</p>
-
+                <p>This website was created to promote my developing skills, and eagerness to learn and demonstrate that I will make a good candidate for Junior Software Development positions. Hopefully, you agree!</p>
                 <h3 class="section-title">The sky's the limit!</h3>
             </section>
         </main>
