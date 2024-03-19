@@ -26,7 +26,7 @@
                     <h4>This small, satirical project can be used for fun, to send friends and others scammy links to user-specified URLs.</h4>
                 </div>
                 <div class="project-header-links">
-                    <a href="https://shady-link.alex-mccaughran.net/"><img class="project-github" src="/images/play-sign.png"></a>
+                    <a href="https://shadeee.click/"><img class="project-github" src="/images/play-sign.png"></a>
                     <a href="https://github.com/TattieMasher/Shadifier"><img class="project-github" src="/images/github-sign.png"></a>
                 </div>
             </section>
