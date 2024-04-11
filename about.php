@@ -27,10 +27,10 @@
                 <p class="fade-in-about3">Alongside my <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> coursework, I work full-time as a Techinical Analyst for Celtic FC. As I approach graduation, I am keen to pursue opportunities in my dream sector– software development.   </p>
                 <div id="about-overview">
 					<div class="about-card">
-                        <p class="about-card-description fade-in-about3">In my current role, I am primarily committed to providing valuable, data-driven business insights. I write complex multi-purpose SQL queries to pull data and support critical decision making at all levels of the business. I compile these datasets into interesting, dynamic, interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
+                        <p class="about-card-description fade-in-about3">In my current role, I am primarily committed to providing valuable, data-driven business insights. I write complex, multi-purpose SQL queries to pull data and support critical decision making at all levels of the business. I compile these datasets into interesting, dynamic, interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
                         <p class="about-card-description-remove2 fade-in-about3">My three-man team and I are responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
                         <p class="about-card-description-remove2 fade-in-about3">On match days, we provide constant monitoring and on-the-fly support for our vast turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
-                        <p class="about-card-description-remove fade-in-about3">We constantly seek process improvements and have recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
+                        <p class="about-card-description-remove fade-in-about3">I constantly seek process improvements and have recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several minor projects, such as an interactive web-map of our stadium and its various entrances.</p>
 					</div>
                     <div class="image-container">
                         <img id="me-pic" class="fade-in-about3" src="images/Me-500x500.png" alt="Me">
@@ -47,8 +47,8 @@
             </section>
             <section id="skills-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">Personal Traits</h3>
-                <p>I am a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding solutions to them. This is something I truly enjoy more than anything else.</p>
-                <p>I feel that high-pressure environments are where I truly shine most— pressure makes diamonds after all!</p>
+                <p>I am a friendly, goal-driven individual who truly enjoys learning new skills more than anything else! When encountering new problems, I take full ownership of them and revel in finding their solutions. This is a truly deep passion of mine.</p>
+                <p>I feel that high-pressure environments are where I truly shine brightest— pressure makes diamonds after all!</p>
                 <ul id="skills-overview">
                     <li><div class="skill-card">
                         <h4>Enthusiastic learner</h4>
@@ -75,9 +75,6 @@
                         <h4>Team player</h4>
                     </div></li>
                     <li><div class="skill-card">
-                        <h4>Respectful outlook</h4>
-                    </div></li>
-                    <li><div class="skill-card">
                         <h4>Analytical mindset</h4>
                     </div></li>
                     <li><div class="skill-card">
@@ -96,8 +93,8 @@
                 <div id="uni-summary">
                     <p>During lockdown, I took a decisive step towards my dream career in software development by enrolling in the Open University. Since then, I have maintained excellent grades whilst balancing full-time work commitments. I have done this by using stellar time management but most importantly fueled by determination to exceed my commitments- and a lot of hard work!</p>
                     <p>I am currently set to graduate with a <b>First Class Honours (1:1).</b></p>
-                    <p>Throughout my time with the Open University, I have learned invaluable skills, such as software development patterns, machine learning techniques, networking protocols, system security, web APIs, cloud computing, ITIL service management, database architecture/administration, operating systems, ethics in computing, statistical analysis (the list goes on!).</p>
-                    <p>Of all my studies, <b>object-oriented programming</b> has interested me most and I its my dream to leverage this preference in a cloud environment.</p>
+                    <p>Throughout my time with the Open University, I have learned invaluable skills, such as software development patterns (MVC, SOLID, etc), machine learning techniques, algorithms and data structures, web development, networking protocols, system security, REST/SOAP API development, cloud computing, ITIL service management, database architecture/administration, operating system architecture, ethics in computing, statistical analysis (the list goes on!).</p>
+                    <p>Of all my studies, <b>object-oriented programming</b> has interested me most and it is my dream to leverage this within a cloud environment.</p>
                 </div>
                 <?php include('components/uni-slider.php');?>
             </section>
