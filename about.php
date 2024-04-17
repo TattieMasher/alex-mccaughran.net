@@ -91,7 +91,7 @@
             <section id="uni-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">University</h3>
                 <div id="uni-summary">
-                    <p>During lockdown, I took a decisive step towards my dream career in software development by enrolling in the Open University. Since then, I have maintained excellent grades whilst balancing full-time work commitments. I have done this by using stellar time management but most importantly fueled by determination to exceed my commitments- and a lot of hard work!</p>
+                    <p>During lockdown, I took a decisive step towards my dream career in software development by enrolling in the Open University. Since then, I have maintained excellent grades whilst balancing full-time work commitments. I have done this through stellar time management, deep determination to exceed at my commitments, and (most importantly) a lot of hard work!</p>
                     <p>I am currently set to graduate with a <b>First Class Honours (1:1).</b></p>
                     <p>Throughout my time with the Open University, I have learned invaluable skills, such as software development patterns (MVC, SOLID, etc), machine learning techniques, algorithms and data structures, web development, networking protocols, system security, REST/SOAP API development, cloud computing, ITIL service management, database architecture/administration, operating system architecture, ethics in computing, statistical analysis (the list goes on!).</p>
                     <p>Of all my studies, <b>object-oriented programming</b> has interested me most and it is my dream to leverage this within a cloud environment.</p>
