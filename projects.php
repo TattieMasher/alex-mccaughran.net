@@ -30,6 +30,18 @@
                         </div>
                     </a>
                 </div>
+                
+                <div class="project-card">
+                    <a class="project-link" href="project-pages/food-finder.php">
+                        <img class="project-pic" src="images/projects/thumbs/TinderThumb.png">
+                        <div class="project-text">
+                            <h5 class="project-header">FoodFinder</h5>
+                            <p class="project-desc">
+                                Tinder-style web-app with a twist that uses Google Places API to obtain local restaurant information.
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
                 <div class="project-card">
                     <a class="project-link" href="project-pages/shady-link-generator.php">

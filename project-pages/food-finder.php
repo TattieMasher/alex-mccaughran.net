@@ -25,39 +25,41 @@
         <main>
             <section class="project-page-header">
                 <div>
-                    <h1>Shopping List Generator</h1>
-                    <h4>Meal prep made easy.</h4>
-                    <h4>Simplify the most difficult part of your weekly shop– the planning! Supply this application with the meals you wish to have, it'll then tell you all the ingredients that you need, in the quantitiy you need.</h4>
+                    <h1>FoodFinder</h1>
+                    <h4>Swipe, swipe, eat!</h4>
+                    <h4>Why swipe right just to endure awkward first dates when you can find your <b>true</b> love— your next favorite local restaurant?</h4>
                 </div>
                 <div class="project-header-links">
-                    <a href="https://shopping-list.alex-mccaughran.net/"><img class="project-github" src="/images/play-sign.png"></a>
-                    <a href="https://github.com/TattieMasher/Grocery-shopper"><img class="project-github" src="/images/github-sign.png"></a>
+                    <a href="https://foodswipe.alex-mccaughran.net/"><img class="project-github" src="/images/play-sign.png"></a>
+                    <a href="https://github.com/TattieMasher/FoodFinder"><img class="project-github" src="/images/github-sign.png"></a>
                 </div>
             </section>
             <section class="project-section">
-                <p>
-                    I created this web-app to simplify the (seemingly) monumental task of meal prepping. It streamlines the meal planning process by allowing users to input meals with their ingredients. It then compiles these meal details into an aggregated shopping list, where ingredient quantities are combined to give a comprehensive shopping list.
-                    <br><br>Built with a React front-end (using Semantic UI), the app interacts with a Spring Boot REST API hosted on a VPS, supplying real-time data management with a MySQL database. Users can plan meals, manage ingredients, and quantities, then generate a combined shopping list containing all their required ingredients.
-                    <br><br>Below you'll find a showcase/overview of some parts of this project's code.
-                </p>
+                    This fun web-app project integrates calls to both the Google Places <a class="about-link" href="https://developers.google.com/maps/documentation/places/web-service/search-nearby">Nearby Search API</a> and <a class="about-link" href="https://developers.google.com/maps/documentation/places/web-service/photos">Place Photos API</a> into a Tinder-like interface.
+                    <br><br>Users are initially greeted with a stacking view of nearby restaurants, formatted into cards, which they like or dislike. After liking, they receive messages from their liked restaurant. In these messages, they're told things such as opening times, user ratings and address (along with a Google Maps link for directions).
+                    <br><br>I made this project entirely in React. Please give it a try, or have a read through the source code on Github!
                 <div class="shopping-list-swapper">
                     <ul class="tabs">
-                        <li class="tab"><a href="#back-end-content">Back-end</a></li>
-                        <li class="tab"><a href="#front-end-content">Front-end</a></li>
+                        <li class="tab"><a href="#back-end-content">Data Interactions</a></li>
+                        <li class="tab"><a href="#front-end-content">User Interface</a></li>
                     </ul>
                     <div id="back-end-content" class="tab-content">
-                        <?php include('../components/projects/shopping-backend-content.php');?> <!-- TODO: MAKE SLICK SLIDER INITIALISE ONLY WHEN RENDERED -->
+                        <?php include('../components/projects/food-data-content.php');?>
                     </div>
                     <div id="front-end-content" class="tab-content">
-                        <?php include('../components/projects/shopping-frontend-content.php');?> <!-- SWAPPED!!!    TODO: SWAP ME BACK -->
+                        <?php include('../components/projects/food-interface-content.php');?>
                     </div>
-                    <!-- TODO: Add another set of buttons? -->
                 </div>
             </section>
         </main>
         <?php include('../components/footer.php');?>
 
-        <!-- External Scripts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Prism.highlightAll();
+            });
+        </script>
+
         <script src="../js/prism.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

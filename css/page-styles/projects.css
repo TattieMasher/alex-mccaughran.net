@@ -182,6 +182,11 @@
     grid-template-columns: 50vw 40vw;
 }
 
+.code-block-full {
+    margin-bottom: 10px;
+    display: grid;
+}
+
 .code-block-right {
     margin-bottom: 10px;
     display: grid;
@@ -193,6 +198,20 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 60% 40%;
+}
+
+.code-block-right-2 {
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 60% 40%;
+}
+
+.code-block-left-2 {
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 30vw 60vw;
 }
 
 pre {
