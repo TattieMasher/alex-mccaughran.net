@@ -3,7 +3,7 @@
     <div>
 
     </div>
-    <div class="code-block-right">
+    <div class="code-block-left-2">
         <p>
             The first step in my application's journey is to make a call to the Google Places Nearby Search API. This is done as soon as the user's location is available, retreiving all nearby restaurants.
             <br><br>The default API call FoodFinder makes is structured as follows.
@@ -209,7 +209,7 @@ const ratingPhrase = [
 
     <div class="code-block-full">
         <p>These various message components are then structured into an array of objects, `messages` containing a `text` field and `timestamp`, which is simply the datetime when the message was generated.
-            <br><br>These objects are then saved in localStorage with the restaurant id as the key. This means that messages are persistent across sessions.
+            <br><br>These objects are then saved in localStorage within the restaurant id as the key. This means that messages are persistent across sessions.
         </p>
         <pre><code class="language-jsx">const messages = [
     { text: `${getRandomItem(greetings)}, ${getRandomItem(pricePhrase)}. ${getRandomItem(ratingPhrase)} ${restaurantData.rating * 2}/10.`, timestamp: new Date().toISOString() },
@@ -218,15 +218,58 @@ const ratingPhrase = [
     { text: generateAvailability(restaurantData), timestamp: new Date().toISOString() }</code></pre>
     </div>
 
-    <p>Examples of these messages generated include:</p>
+    <p>Examples of these message objects generated include:</p>
     <div class="code-block-slider">
         <div>
             <div class="code-block-right">
-                <p>For a restaurant with low prices... TODO</p>
-                <pre><code class="language-jsx"></code></pre>
+                <div>
+                    <p>For a restaurant with...</p>
+                    <ul>
+                        <li>Low prices</li>
+                        <li>3.5/5 rating</li>
+                        <li>An address of "123 MadeUp Street, Town, T0 0WN"</li>
+                        <li>A google maps uri of "https://maps.google.com/?cid=123"</li>
+                        <li>A Phone number of 01234 567890</li>
+                        <li>Availability 9am to 5pm daily</li>
+                    </ul>
+                </div>
+                <pre><code class="language-jsx">{ text: "Hey, I'm cheaper than the rest! On a good day, I'm easily a 7/10.", timestamp: 11/05/2024, 22:32:41 }
+{ text: "I'm at &lt;a href="https://maps.google.com/?cid=123">123 MadeUp Street, Town, T0 0WN&gt;. Come visit me!", timestamp: 11/05/2024, 22:32:41 }
+{ text: `Or give me a call on 01234 567890. You can reach me...`, timestamp: 11/05/2024, 22:32:41 }
+{ text: "Monday: 9:00 am – 5:00 pm",
+    "Tuesday: 9:00 am – 5:00 pm",
+    "Wednesday: 9:00 am – 5:00 pm",
+    "Thursday: 9:00 am – 5:00 pm",
+    "Friday: 9:00 am – 5:00 pm",
+    "Saturday: 9:00 am – 5:00 pm",
+    "Sunday: 9:00 am – 5:00 pm"}, timestamp: 11/05/2024, 22:32:41 }
+                </code></pre>
             </div>
         </div>
         <div>
+            <div class="code-block-right">
+                <div>
+                    <p>For a restaurant with...</p>
+                        <ul>
+                            <li>High prices.</li>
+                            <li>4.75/5 rating</li>
+                            <li>An address of "01 Fancy Street, City, C1 1TY"</li>
+                            <li>A google maps uri of "https://maps.google.com/?cid=456"</li>
+                            <li>A Phone number of 04321 098765</li>
+                            <li>Daily availability from 5am to midnight</li>
+                        </ul>
+                </div>
+                <pre><code class="language-jsx">{ text: "Helo, if you can't afford me, don't even try! If I had to rate myself, I'm definitely 9/10.", timestamp: 11/05/2024, 22:32:41 }
+{ text: "I'm at &lt;a href="https://maps.google.com/?cid=456">01 Fancy Street, City, C1 1TY&gt;. Come visit me!", timestamp: 11/05/2024, 22:32:41 }
+{ text: `Or give me a call on 04321 098765. You can reach me...`, timestamp: 11/05/2024, 22:32:41 }
+{ text: "Monday: 5:00 am – 12:00 am",
+    "Tuesday: 5:00 am – 12:00 am",
+    "Wednesday: 5:00 am – 12:00 am",
+    "Thursday: 5:00 am – 12:00 am",
+    "Friday: 5:00 am – 12:00 am",
+    "Saturday: 5:00 am – 12:00 am",
+    "Sunday: 5:00 am – 12:00 am"}, timestamp: 11/05/2024, 22:32:41 }</code></pre>
+            </div>
         </div>
     </div>
 </section>

@@ -37,11 +37,11 @@
             <section class="project-section">
                     This fun web-app project integrates calls to both the Google Places <a class="about-link" href="https://developers.google.com/maps/documentation/places/web-service/search-nearby">Nearby Search API</a> and <a class="about-link" href="https://developers.google.com/maps/documentation/places/web-service/photos">Place Photos API</a> into a Tinder-like interface.
                     <br><br>Users are initially greeted with a stacking view of nearby restaurants, formatted into cards, which they like or dislike. After liking, they receive messages from their liked restaurant. In these messages, they're told things such as opening times, user ratings and address (along with a Google Maps link for directions).
-                    <br><br>I made this project entirely in React. Please give it a try, or have a read through the source code on Github!
+                    <br><br>I made this responsive project entirely in React, using <a class="about-link" href="https://v2.chakra-ui.com/">ChakraUI</a> for certain components, <a class="about-link" href="https://react-icons.github.io/react-icons/">React-icons for some icons</a> and general HTML/CSS styling for others. Please give it a try, or have a read through the source code. I've highlighted some of the interesting code below and the full source can also be viewed on GitHub!
                 <div class="shopping-list-swapper">
                     <ul class="tabs">
                         <li class="tab"><a href="#back-end-content">Data Interactions</a></li>
-                        <li class="tab"><a href="#front-end-content">User Interface</a></li>
+                        <li class="tab"><a href="#front-end-content">Interface Interactions</a></li>
                     </ul>
                     <div id="back-end-content" class="tab-content">
                         <?php include('../components/projects/food-data-content.php');?>
