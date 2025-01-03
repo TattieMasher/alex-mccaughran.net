@@ -105,7 +105,7 @@
 				</div>
 			</div>
 			<div class="event-date uni">
-                <h4>2020<br>—<br>Now</h4>
+                <h4><br>2020</h4>
             </div>
 		</div>
         <div class="event" data-start-date="2023-02-15" data-end-date="2023-03-15">
@@ -163,10 +163,10 @@
                         </div>
                         <div class="text-content">
                             <p>
-								My job role at Celtic is rather varied, but always focussed on delivering the best resulst in a forward-thinking way. I'm focussed primarily on delivering data to support high-level business decisions. I regularly interact with complex databases and provide useful inisghts from them, communicated in an accessible and interactive manner through Tableau dashboards.<br><br>
-                                I'm also responsible for ensuring entry of all 50,000+ fans on a match day, through maintenance and troubleshooting on our vast turnstile network and venue entry software.<br><br>
-                                On top of these, I also perform general IT on Windows machines for the 15-or-so strong customer service team in the Ticket Office.<br><br>
-                                At Celtic, I'm always on the hunt for improvements to our data and IT-related processes. My proactive approach has led to the successful completion of multiple Continuous Improvement projects, where I played a key role in driving these improvements.
+                            My role at Celtic was varied but always focused on delivering the best results in a forward-thinking way. I was primarily responsible for delivering data to support high-level business decisions. I regularly interacted with complex databases and provided useful insights from them, communicated in an accessible and interactive manner through Tableau dashboards.<br><br>
+                                I was also responsible for ensuring entry of all 50,000+ fans on a match day through maintenance and troubleshooting on the vast turnstile network and venue entry software.<br><br>
+                                In addition to these responsibilities, I performed general IT support on Windows machines for the 15-or-so strong customer service team in the Ticket Office.<br><br>
+                                At Celtic, I consistently sought improvements to data and IT-related processes. My proactive approach led to the successful completion of multiple Continuous Improvement projects, where I played a key role in driving these improvements.
 							</p>
                             <h5>Soft Skills:</h5>
                             <ul>
@@ -196,7 +196,51 @@
                 </div>
             </div>
             <div class="event-date">
-                <h4>2022<br>—<br>Now</h4>
+                <h4><br>2022</h4>
+            </div>
+        </div>
+        <div class="event" data-start-date="2024-06-01" data-end-date="Present">
+            <div class="icon pulse">
+                <div class="tooltip">
+                    <div class="left">
+                        <div class="tooltip-header">
+                            <h3>Graduate Microsoft Software Developer</h3>
+                            <h4>Müller UK & Ireland</h4>
+                        </div>
+                        <div class="text-content">
+                            <p>
+                                At Müller UK & Ireland, I am part of an agile development team focused on delivering robust, high-quality software solutions. My responsibilities include designing, developing, testing, and deploying applications using Microsoft C#, ASP.NET, SQL Server, and Azure technologies. Collaborating with stakeholders across the business, I help ensure our products meet user needs while adhering to industry best practices.<br><br>
+                                I am actively involved in sprint planning and delivery, as well as the full software development lifecycle, from requirements gathering to user acceptance testing. My proactive approach supports the team in maintaining high standards and driving continuous improvement.
+                            </p>
+                            <h5>Soft Skills:</h5>
+                            <ul>
+                                <li>Agile Development Methodologies</li>
+                                <li>Stakeholder Communication</li>
+                                <li>Team Collaboration</li>
+                                <li>Problem-Solving and Analysis</li>
+                                <li>Time Management</li>
+                                <li>Attention to Detail</li>
+                                <li>Adaptability</li>
+                                <li>Continuous Improvement</li>
+                            </ul>
+                            <h5>Technical Skills:</h5>
+                            <ul>
+                                <li>C# Development</li>
+                                <li>ASP.NET and SQL Server</li>
+                                <li>Azure Cloud Services</li>
+                                <li>MS DevOps and Jira</li>
+                                <li>Unit and Integration Testing</li>
+                                <li>Software Design and Documentation</li>
+                                <li>SSRS and SSIS</li>
+                                <li>Object-Oriented Programming</li>
+                                <li>Process and Business Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-date">
+                <h4>2024<br>—<br>Now</h4>
             </div>
         </div>
     </div>
