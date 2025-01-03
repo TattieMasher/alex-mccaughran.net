@@ -20,6 +20,17 @@
         <main class="project-wrapper">
             <section id="projects-section">
                 <div class="project-card">
+                    <a class="project-link" href="#"> <!-- TODO -->
+                        <img class="project-pic" src="images/projects/thumbs/HistoryHikeThumb.png">
+                        <div class="project-text">
+                            <h5 class="project-header">HistoryHike</h5>
+                            <p class="project-desc">
+                                My final University project– a location-based, history-themed educational Android game.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
                     <a class="project-link" href="project-pages/shopping-list-generator.php">
                         <img class="project-pic" src="images/projects/thumbs/ShoppingThumb.png">
                         <div class="project-text">
@@ -30,7 +41,6 @@
                         </div>
                     </a>
                 </div>
-                
                 <div class="project-card">
                     <a class="project-link" href="project-pages/food-finder.php">
                         <img class="project-pic" src="images/projects/thumbs/TinderThumb.png">
@@ -42,7 +52,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="project-card">
                     <a class="project-link" href="project-pages/shady-link-generator.php">
                         <img class="project-pic" src="images/projects/thumbs/ShortenerThumb.png">
@@ -54,7 +63,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="project-card">
                     <a class="project-link" href="project-pages/password-manager.php">
                         <img class="project-pic" src="images/projects/thumbs/PasswordManagerThumb.jpg">
@@ -66,7 +74,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="project-card">
                     <a class="project-link" href="project-pages/compound-interest.php">
                         <img class="project-pic" src="images/projects/thumbs/InterestThumb.png">
@@ -78,7 +85,6 @@
                         </div>
                     </a>
                 </div>
-                
             </section>
         </main>
         <?php include('components/footer.php');?>
