@@ -22,25 +22,25 @@
         ?>  
         <main>
             <section id="about-section" class="fade-in-section">
-				<h1 id="fade-in-about1" class="section-title">Hi,<span id="fade-in-about2"> nice to meet you!</span></h1>
+                <h1 id="fade-in-about1" class="section-title">Hi,<span id="fade-in-about2"> nice to meet you!</span></h1>
                 <?php include('components/terminal.php'); ?>
-                <p class="fade-in-about3">Alongside my <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> coursework, I work full-time as a Techinical Analyst for Celtic FC. As I approach graduation, I am keen to pursue opportunities in my dream sector– software development.   </p>
+                <p class="fade-in-about3">Having graduated with <b>First-Class Honours</b> in my <a class="about-link" href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft">Computing & IT (Software)</a> degree, I now work with Müller UK & Ireland as a Graduate Software Developer. I develop innovative software solutions and support existing business-critical applications while collaborating within an agile team to drive business-wide continuous improvement.</p>
                 <div id="about-overview">
-					<div class="about-card">
-                        <p class="about-card-description fade-in-about3">In my current role, I am primarily committed to providing valuable, data-driven business insights. I write complex, multi-purpose SQL queries to pull data and support critical decision making at all levels of the business. I compile these datasets into interesting, dynamic, interactive reports in Tableau to clearly present integral data to a variety of stakeholders.</p>
-                        <p class="about-card-description-remove2 fade-in-about3">My three-man team and I are responsible for operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
-                        <p class="about-card-description-remove2 fade-in-about3">On match days, we provide constant monitoring and on-the-fly support for our vast turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
-                        <p class="about-card-description-remove fade-in-about3">I constantly seek process improvements and have recently oversaw two projects: upgrading our turnstile readers across the stadium and implementing QR ticket encoding to enhance the supporter matchday entry experience. I've also undertaken several minor projects, such as an interactive web-map of our stadium and its various entrances.</p>
-					</div>
+                    <div class="about-card">
+                        <p class="about-card-description fade-in-about3">In my current role, I design, develop, test, and deploy software applications using Microsoft technologies such as C#, ASP.NET, SQL Server, and Azure. I am actively involved in all stages of the Software Development Lifecycle, from requirement gathering, to development, to user acceptance testing and deployment. This ensures that the solutions I deliver closely align with business objectives and stakeholder needs.</p>
+                        <p class="about-card-description-remove2 fade-in-about3">As part of an agile team, I am follow best practices and deliver value through collaboration. I play a key role when designing our software by sharing ideas, gathering requirements, and ensuring compliance with company standards while supporting seamless integration across teams.</p>
+                        <p class="about-card-description-remove2 fade-in-about3">In addition to development work, I assist with integration testing, user acceptance testing, and thorough documentation of software designs and specifications. By engaging directly with stakeholders and end users, I ensure that all deliverables meet or exceed expectations.</p>
+                        <p class="about-card-description-remove fade-in-about3">I continuously seek opportunities to enhance my technical expertise, including working with cloud services, DevOps tools, and business intelligence systems. My proactive approach supports both personal growth and the delivery of impactful software solutions that drive efficiency and innovation across the organisation.</p>
+                    </div>
                     <div class="image-container">
                         <img id="me-pic" class="fade-in-about3" src="images/Me-500x500.png" alt="Me">
                     </div>
                     <div class="about-card-alt">
-                        <p class="about-card-description-alt2 fade-in-about3">My three-man team and I are responsible operating, maintaining and optimising Celtic's ticketing and venue entry related systems. We are super users on these and provide first-line support in resolving queries related to these, as well as ensure they operate smoothly for all users.</p>
-                        <p class="about-card-description-alt2 fade-in-about3">On match days, we provide constant reporting and on-the-fly support for our turnstile network, ensuring all 50,000+ supporters make it to each event.</p>
-                        <p class="about-card-description-alt fade-in-about3">I constantly seek process improvements and recently oversaw a project to implement QR encoding to enhance the supporter matchday entry experience. I've also undertaken several projects entirely of my own accord, such as an interactive web-map of our stadium and its various entrances.</p>
+                        <p class="about-card-description-alt2 fade-in-about3">In my role at Müller, I focus on developing high-quality software applications that meet the needs of the business and its stakeholders. Leveraging technologies like C#, SQL Server, and Azure, I ensure that each solution is both robust and scalable.</p>
+                        <p class="about-card-description-alt2 fade-in-about3">I actively contribute to all phases of the software development lifecycle, including requirement gathering, sprint planning, and delivery. My collaboration with stakeholders ensures that the solutions I develop align with the business's goals and standards.</p>
+                        <p class="about-card-description-alt fade-in-about3">I am passionate about learning and continuously enhancing my technical and problem-solving skills. By collaborating with colleagues and stakeholders, I aim to deliver innovative solutions that drive success and efficiency across the organization.</p>
                     </div>
-				</div>
+                </div>
             </section>
             <section id="work-section" class="fade-in-section fade-in-about3">
                 <?php include('components/timeline.php'); ?>
@@ -91,10 +91,10 @@
             <section id="uni-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">University</h3>
                 <div id="uni-summary">
-                    <p>During lockdown, I took a decisive step towards my dream career in software development by enrolling in the Open University. Since then, I have maintained excellent grades whilst balancing full-time work commitments. I have done this through stellar time management, deep determination to exceed at my commitments, and (most importantly) a lot of hard work!</p>
-                    <p>I am currently set to graduate with a <b>First Class Honours (1:1).</b></p>
-                    <p>Throughout my time with the Open University, I have learned invaluable skills, such as software development patterns (MVC, SOLID, etc), machine learning techniques, algorithms and data structures, web development, networking protocols, system security, REST/SOAP API development, cloud computing, ITIL service management, database architecture/administration, operating system architecture, ethics in computing, statistical analysis (the list goes on!).</p>
-                    <p>Of all my studies, <b>object-oriented programming</b> has interested me most and it is my dream to leverage this within a cloud environment.</p>
+                <p>During the COVID-19 lockdown, I took a decisive step towards my dream career in software development by enrolling in the Open University. Balancing full-time work with my studies required stellar time management, deep determination, and a relentless work ethic—qualities that I have cultivated throughout my journey.</p>
+                <p>I graduated with a <b>First Class Honours (1:1)</b>, a result I am immensely proud of. My final project, a comprehensive software development initiative, received an exceptional <b>90%</b>, highlighting my ability to apply technical knowledge and innovative thinking to real-world challenges.</p>
+                <p>Throughout my time with the Open University, I gained invaluable skills, including software development patterns (MVC, SOLID, etc.), machine learning techniques, algorithms and data structures, web development, networking protocols, system security, REST/SOAP API development, cloud computing, ITIL service management, database architecture/administration, operating system architecture, ethics in computing, and statistical analysis (the list goes on!).</p>
+                <p>Of all my studies, <b>object-oriented programming</b> interested me most, and I am eager to continue leveraging this expertise in cloud environments and beyond.</p>
                 </div>
                 <?php include('components/uni-slider.php');?>
             </section>

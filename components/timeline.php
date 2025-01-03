@@ -37,7 +37,7 @@
                         <div class="text-content">
                             <p>
                                 I was the first point of contact for all Vodafone business customers, eventually moving to Vodafone Prime.
-                                Here, I provided expert-level investigation to complex complaint situations. I also supported a wide-array of products as a point of escalation.
+                                Here, I provided expert-level investigation to complex complaint situations and technical problems. I also supported a wide-array of products as a point of escalation.
                                 Skills used:
                             </p>
                             <ul>

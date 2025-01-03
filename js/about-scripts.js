@@ -30,8 +30,8 @@ function enableScrolling() {
 }
 
 
-const stringsArray = ["develop interesting code", "play guitar", "listen to podcasts" ,"learn new skills",
-	 "go bouldering", "get lost in a good story","travel to new places", "do jiu jitsu", 
+const stringsArray = ["develop interesting code", "do jiu jitsu", "play guitar", "listen to podcasts" ,"learn new skills",
+	 "go bouldering", "get lost in a good story", "travel to new places",
 	 "solve problems", "drink coffee"];
 
 function typeAndDeleteStrings(stringsArray) {
