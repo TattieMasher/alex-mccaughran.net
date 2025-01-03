@@ -20,7 +20,7 @@
         <main class="project-wrapper">
             <section id="projects-section">
                 <div class="project-card">
-                    <a class="project-link" href="#"> <!-- TODO -->
+                    <a class="project-link" href="project-pages/history-hike.php"> <!-- TODO -->
                         <img class="project-pic" src="images/projects/thumbs/HistoryHikeThumb.png">
                         <div class="project-text">
                             <h5 class="project-header">HistoryHike</h5>
