@@ -33,7 +33,7 @@
                         <p class="about-card-description-remove fade-in-about3">I continuously seek opportunities to enhance my technical expertise, including working with cloud services, DevOps tools, and business intelligence systems. My proactive approach supports both personal growth and the delivery of impactful software solutions that drive efficiency and innovation across the organisation.</p>
                     </div>
                     <div class="image-container">
-                        <img id="me-pic" class="fade-in-about3" src="images/Me-500x500.png" alt="Me">
+                        <img id="me-pic" class="fade-in-about3" src="images/Me-500x500.png" alt="A picture of Alex and his beautiful puppy, Honey!">
                     </div>
                     <div class="about-card-alt">
                         <p class="about-card-description-alt2 fade-in-about3">In my role at Müller, I focus on developing high-quality software applications that meet the needs of the business and its stakeholders. Leveraging technologies like C#, SQL Server, and Azure, I ensure that each solution is both robust and scalable.</p>
