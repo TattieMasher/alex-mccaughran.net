@@ -107,7 +107,7 @@
             </section>
             <section id="about-section" class="fade-in-section fade-in-about3">
                 <h3 class="section-title">So . . .</h3>
-                <p>This website was created to promote my developing skills, and eagerness to learn and demonstrate that I will make a good candidate for Junior Software Development positions. Hopefully, you agree!</p>
+                <p>This website was created to promote my developing skills, and eagerness to learn and demonstrate that I am a good candidate for Junior Software Development positions. Hopefully, you agree!</p>
                 <h3 class="section-title">The sky's the limit!</h3>
             </section>
         </main>
