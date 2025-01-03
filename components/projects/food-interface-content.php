@@ -228,7 +228,7 @@ function ChatDetail({ chatId, onClose }) {
     <!-- settingsModal.jsx -->
     <div class="code-block-left-2">
         <p>
-            Finally, there is the settings modal. This provides the user with the option to amend their search radius, increasing the radius value sent to the Google Places Nearby Search API.
+            There is also the settings modal, which provides the user with the option to amend their search radius, increasing the radius value sent to the Google Places Nearby Search API.
             <br><br>This modal manages the search radius as it chagnes locally, before saving it to localStorage upon user request. 
             <br><br>The user is also able to clear all localStorage data within this modal, including chats, liked/disliked restaurants and chats with liked restaurants.
             <br><br>Changes to this page trigger a page reload, to search for restaurants again.
