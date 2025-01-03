@@ -66,6 +66,9 @@
                         <h4>Resilient personality</h4>
                     </div></li>
                     <li><div class="skill-card">
+                        <h4>Highly adaptable</h4>
+                    </div></li>
+                    <li><div class="skill-card">
                         <h4>Strong time management</h4>
                     </div></li>
                     <li><div class="skill-card">
