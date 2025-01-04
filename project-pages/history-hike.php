@@ -34,7 +34,7 @@
             </section>
             <section class="project-section">
                 <p>
-                HistoryHike is a highly ambitious location-based Android application designed to make exploration fun, interactive, and rewarding. The project is the culmination of advanced technical integration, with a frontend written in Java using Android Studio and a robust backend powered by a Spring Boot REST API hosted on a dedicated VPS.
+                    HistoryHike is a highly ambitious location-based Android application designed to make exploration fun, interactive, and rewarding. The project is the culmination of advanced technical integration, with a frontend written in Java using Android Studio and a robust backend powered by a Spring Boot REST API hosted on a dedicated VPS.
                     <br><br>The app allows users to:
                     <ul>
                         <li>Complete location-based quests displayed on an interactive map.</li>
@@ -45,16 +45,22 @@
                     <br><br>
                     The scale of HistoryHike is vast, blending real-world data with gamification principles, and it stands as one of the most technically challenging and rewarding projects I’ve completed to date, netting me a <u>90% grade</u> for technical work in my University studies.
                 </p>
+                  <!-- TODO: REMOVE THE BELOW -->
+                <h2>If you're seeing this page, please note that this write-up is a work in progress. There are more snippets and descriptions to come.</h2>
                 <div class="shopping-list-swapper">
                     <ul class="tabs">
-                        <li class="tab"><a href="#back-end-content">Data Interactions</a></li>
-                        <li class="tab"><a href="#front-end-content">Interface Interactions</a></li>
+                        <li class="tab"><a href="#database-content">Database</a></li>
+                        <li class="tab"><a href="#spring-content">Spring Boot REST API</a></li>
+                        <li class="tab"><a href="#app-content">Android App</a></li>
                     </ul>
-                    <div id="back-end-content" class="tab-content">
-                        <?php include('../components/projects/TODO.php');?>
+                    <div id="database-content" class="tab-content">
+                        <?php include('../components/projects/history-database-content.php');?>
                     </div>
-                    <div id="front-end-content" class="tab-content">
-                        <?php include('../components/projects/TODO.php');?>
+                    <div id="spring-content" class="tab-content">
+                        <?php include('../components/projects/history-backend-content.php');?>
+                    </div>
+                    <div id="app-content" class="tab-content">
+                        <?php include('../components/projects/history-app-content.php');?>
                     </div>
                 </div>
             </section>
